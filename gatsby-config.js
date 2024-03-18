@@ -8,6 +8,7 @@ module.exports = {
     title: "Decentraland Art Week",
   },
   assetPrefix: process.env.ASSET_PREFIX,
+  pathPrefix: "/artweek",
   plugins: [
     "gatsby-plugin-styled-components",
     "gatsby-plugin-image",
