@@ -8,7 +8,6 @@ import Banner from "../components/Banner";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import BannerMarquee from "../components/Marquee";
-import WatchTheTeaser from "../components/WatchTheTeaser";
 import About from "../components/About";
 import Faq from "../components/Faq";
 import Sitemap from "../components/Sitemap";
@@ -127,18 +126,12 @@ const IndexPage = () => {
           <About />
           <BannerMarquee />
           <LineUpSchedule />
+          <BannerMarquee direction="right" />
           {/* <WatchTheTeaser setShowVideo={setShowVideo} setMuted={setMuted} /> */}
           <Stages />
           <Highlights />
           <BannerMarquee />
-          <MerchBanner
-            src={merchBanner}
-            href="https://decentraland.org/marketplace/"
-            target="_blank"
-          />
-          <BannerMarquee direction="right" />
           <Sitemap />
-          <BannerMarquee />
           <Faq />
           <Footer />
         </main>

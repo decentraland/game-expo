@@ -32,11 +32,11 @@ const StyledButton = styled.a`
   display: flex;
   align-items: center;
   font-size: 14px;
+  flex: none;
   line-height: 60px;
   font-weight: 600;
   letter-spacing: 0.165rem;
   text-transform: uppercase;
-  width: 100%;
   cursor: pointer;
   transition: 0.1s ease-in-out all;
   white-space: nowrap;

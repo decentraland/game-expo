@@ -8,6 +8,7 @@ const basicPalette = {
     'black': '#000000',
     'white': '#FFFFFF',
     'background': '#040D2D',
+    "secondary": "#F9F5D4",
     'accent': themeConfig.accent,
     'blueGray': '#B8BEE5',
     'gray': '#CCCCCC'

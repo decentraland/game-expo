@@ -1,46 +1,25 @@
-import React, { useEffect, useState } from "react";
-import styled from "styled-components";
-import { StaticImage } from "gatsby-plugin-image";
-import StageSchedule from "../StageSchedule";
-import { breakpoints } from "../../../utils/theme";
+import React from "react";
 import {
   StyledDaySchedule,
   StyledDayBody,
-  StyledDayHeader,
-  StyledDayTitle,
-  StyledDayinfo,
   StyledDataItem,
   StyledDataItemText,
 } from "./styles.js";
-import {
-  StyledBodyBtnSection,
-  StyledArrowBtn,
-} from "../LineUpSchedule/styles.js";
-import scheduleSeparator from "../../images/schedule/scheduleseparator.png";
+import theme from '../../../utils/theme.js'
 
 const DaySchedule = (props) => {
   const { dayInfo } = props;
 
   return (
     <StyledDaySchedule>
-      {/* <StyledDayHeader>
-        <StyledDayTitle>{dayInfo.date}</StyledDayTitle>
-      </StyledDayHeader> */}
       <StyledDayBody>
         {dayInfo.events.map((event, index) => (
           <StyledDataItem key={index}>
-            <img
-              src={scheduleSeparator}
-              width="24px"
-              height="24px"
-              alt="schedule"
-              style={{ marginTop: "2px"}}
-            />
-            <div style={{ display: "flex", flexDirection: "column" }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
               <StyledDataItemText>
-                {event.time} - {event.title}
+                <span style={{ color: theme.secondary }}>{event.time}</span> - <span style={{ color: theme.accent}}>{event.title}</span>
               </StyledDataItemText>
-              <StyledDataItemText>{event.coordinates}</StyledDataItemText>
+              <StyledDataItemText>{event.description} ({event.coordinates})</StyledDataItemText>
             </div>
           </StyledDataItem>
         ))}

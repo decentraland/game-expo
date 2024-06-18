@@ -13,55 +13,32 @@ const About = (props) => {
       <Container>
         <StyledAbout>
           <AboutHeader>
-            <AboutTitle>DECENTRALAND ART WEEK</AboutTitle>
+            <AboutTitle>DECENTRALAND GAME EXPO</AboutTitle>
           </AboutHeader>
           <Aboutbody>
-            {/* <AboutBodyImgContainer>
-              <StarBustSideIcon src={aboutIcon} width="40px" height="40px" />
-              <StarBustSideIcon src={aboutIcon} width="40px" height="40px" />
-              <StarBustSideIcon src={aboutIcon} width="40px" height="40px" />
-              <StarBustSideIcon src={aboutIcon} width="40px" height="40px" />
-              <StarBustSideIcon src={aboutIcon} width="40px" height="40px" />
-            </AboutBodyImgContainer> */}
             <AboutBodyText>
               <AboutParagraphItem>
                 <StarBustSideIcon src={aboutIcon} width="40px" height="40px" />
                 <p>
-                  Join us for the <ParagraphSpan>5th edition of Decentraland Art Week</ParagraphSpan> to
-                  explore art beyond reality.
+                Explore the future of Web3 gaming at the first-ever Decentraland Game Expo! Displayed across a colorful virtual fairground, DCLGX will present a must-see arcade of amusement showcasing some of the best games on the blockchain from leading studios and talented creators.
                 </p>
               </AboutParagraphItem>
               <AboutParagraphItem>
                 <StarBustSideIcon src={aboutIcon} width="40px" height="40px" />
                 <p>
-                  From <ParagraphSpan>March 26-29</ParagraphSpan> 2024, you'll discover the infinite potential
-                  of art and creativity in new realities. As this year’s
-                  festival takes on the theme of "exploration", expect to enter
-                  a realm where virtual environments become journeys of
-                  discovery... with new Wearables and Emotes to collect on the
-                  way!
+                Discover 30 neon-lit attractions: 26 expo booths hosting a variety of games from strategy, RPG, adventure, puzzle, and more, as well as the top 4 DCLGX Game Jam winners—visit all 30 and collect up to 15 free Wearables & Emotes along the way! In-between gaming, join tours to explore the fairgrounds and attend to live expert talks & interviews from industry experts.
                 </p>
               </AboutParagraphItem>
               <AboutParagraphItem>
                 <StarBustSideIcon src={aboutIcon} width="40px" height="40px" />
                 <p>
-                  A highlight of Decentraland Art Week is <ParagraphSpan>MESHfair</ParagraphSpan>, the renowned
-                  virtual art fair for 3D, metaverse, and VR creators. Curated
-                  by leading galleries including Unit London and OFFICE IMPART,
-                  MESHfair showcases thirty new immersive works by international
-                  artists. On Thursday, March 28, join us for a sparkling Awards
-                  Gala to see which MESHfair artist will be awarded the
-                  Decentraland Prize.
+                Whether you’re a gamer, gamedev, or Web3 first-timer, DCLGX is your destination for Web3 gaming. 
                 </p>
               </AboutParagraphItem>
               <AboutParagraphItem>
                 <StarBustSideIcon src={aboutIcon} width="40px" height="40px" />
                 <p>
-                  What's more, at Decentraland Art Week you'll experience the
-                  unveiling of eight new, large-scale galleries. Developed by
-                  award-winning teams in response to the theme of exploration,
-                  the galleries will host a diverse array of virtual art,
-                  interactive installations, and live performances.
+                See you in Decentraland June 26-29!
                 </p>
               </AboutParagraphItem>
               <AboutParagraphItem>
@@ -71,25 +48,6 @@ const About = (props) => {
                   you there!
                 </p>
               </AboutParagraphItem>
-              {/* <AboutBodyParagraph>
-                Prepare to discover an alternative reality inspired by the themes of <TextHighlight>radical self-expression, communal growth, and artistic renewal</TextHighlight> in the 3rd, most innovative edition of Decentraland Music Festival yet!
-                <br />
-                <br />
-                With stages and experiences built by <TextHighlight>16 award-winning teams</TextHighlight> of virtual creators and game designers, #DCLMF23 will showcase the latest in immersive music experience, defining what music can be in the virtual world.
-                <br />
-                <br />
-                Stepping boldly towards the future, <TextHighlight>#DCLMF23</TextHighlight> leaves behind the banner of Metaverse Music Festival and traditional mainstream artists to offer only the most pioneering, digital-native performances with the spotlight fully on Decentraland’s community.
-                <br />
-                <br />
-                Free for all to attend with no VR headset required, #DCLMF23 will feature:
-                <ul>
-                  <li><TextHighlight>80+ interactive performances</TextHighlight> over 3 days from the world’s most innovative artists & independent labels</li>
-                  <li><TextHighlight>5 main stages & 10 new games and immersive experiences</TextHighlight> designed by award-winning virtual creators</li>
-                  <li>Headline sets by OG digital pioneers like Cora Novoa, Trick Daddy, GuccieToe, Bufalo, Glitch Rave, Steve Sai, and others</li>
-                  <li>And much more!</li>
-                </ul>
-                <br />
-              </AboutBodyParagraph> */}
             </AboutBodyText>
           </Aboutbody>
           <AboutButtonContainer
@@ -107,7 +65,8 @@ const About = (props) => {
 };
 
 const AboutParagraphItem = styled.div`
-  font-family: "Helvetica";
+  font-family: "GOTHAM";
+  font-weight: 600;
   display: flex;
   gap: 32px;
 
@@ -125,9 +84,9 @@ const MVFont = styled.span`
 }`;
 
 const AboutTitle = styled.h2`
-  font-family: HackerNoon;
+  font-family: KAMIKAZE;
   text-shadow: 0px 0px 31px #393939;
-  font-size: 32px;
+  font-size: 75px;
   text-align: center;
 `;
 

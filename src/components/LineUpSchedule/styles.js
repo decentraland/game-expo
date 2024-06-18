@@ -1,9 +1,14 @@
 import styled from "styled-components";
-import { breakpoints } from "../../../utils/theme";
+import theme, { breakpoints } from "../../../utils/theme";
+import scheduleBg from "../../images/schedule/SCHEDULE_BG.png"
 
 export const StyledLineUpSchedule = styled.div`
   padding-top: 150px;
   padding-bottom: 75px;
+  background-image: url(${scheduleBg});
+  background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
 `;
 
 // --------------  HEADER --------------------
@@ -24,21 +29,22 @@ export const StyledHeaderImg = styled.img`
 
 export const Title = styled.h2`
   font-size: 32px;
-  font-family: "HackerNoon";
+  font-family: "KAMIKAZE";
   text-align: center;
   letter-spacing: 10px;
+  color: ${theme.secondary}
 
   @media screen and (min-width: ${breakpoints.md}) {
     font-size: 64px;
   }
   @media screen and (min-width: ${breakpoints.l}) {
-    font-size: 100px;
+    font-size: 75px;
   }
   @media screen and (min-width: ${breakpoints.xl}) {
-    font-size: 100px;
+    font-size: 75px;
   }
   @media screen and (min-width: ${breakpoints.xxl}) {
-    font-size: 100px;
+    font-size: 75px;
   }
 `;
 
@@ -56,24 +62,29 @@ export const StyledHeaderVector = styled.img`
 export const StyledLineUpBtnSection = styled.div`
   display: none;
   margin-top: 72px;
-  gap: 52px;
   overflow-x: auto;
+  border-radius: 42px;
+  gap: 2px;
 
   @media screen and (min-width: 769px) {
     flex-direction: row;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
 `;
 
 export const StyledLineUpBtn = styled.button`
+  display: flex;
+  flex: 1;
   cursor: pointer;
   box-sizing: border-box;
-  font-family: "Gothic";
-  font-size: 12px;
+  font-family: "KAMIKAZE";
+  font-size: 16px;
   font-weight: 600;
+  outline: none !important;
   letter-spacing: 0.12em;
+  text-transform: uppercase;
 
   /* Auto layout */
   display: flex;
@@ -83,36 +94,27 @@ export const StyledLineUpBtn = styled.button`
   padding: 32px 36px;
   gap: 10px;
   height: 70px;
-  background: #000000;
-  border: 3px solid #ffffff;
-
-  border-radius: 58px;
+    background: ${theme.accent};
+    color: ${theme.secondary};
 
   /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
   color: #ffffff;
   transition: all 0.5s ease;
   &.selected {
-    background: #ffa450;
-    color: white;
-    box-shadow: 0px 0px 20px rgba(211, 207, 255, 0.7);
+    background: ${theme.secondary};
+    color: ${theme.accent};
   }
   &:hover,
   .selected {
     /* background: #ffffff; */
-    background: #ffa450;
-    color: white;
-    box-shadow: 0px 0px 20px rgba(211, 207, 255, 0.7);
+    background: ${theme.secondary};
+    color: ${theme.accent};
   }
 `;
 
 //---------------- BODY  -----------------------
 export const StyledLineUpBody = styled.section`
   height: auto;
-  margin-bottom: 64px;
-  margin-top: 64px;
   display: flex;
   flex-direction: row;
 `;

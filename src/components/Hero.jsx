@@ -20,7 +20,7 @@ const Hero = () => {
       <Container>
         <LogoContainer>
           {/* <img src="dmf-logo-white.png" width="100%" /> */}
-          <img src={herotitle} width="70%" />
+          <img src={herotitle} width="100%" />
         </LogoContainer>
         <EventDetails>
         <EventData>
@@ -30,19 +30,11 @@ const Hero = () => {
                   JUNE. 26-29 • 
                 </DateHighlight>
                 <DateLocation> GAME EXPO PLAZA, [0,81]</DateLocation>
+                <br />
+                <DateLocation>DCLGX is a free event, open to all</DateLocation>
               </DateComponent>
             </EventDataItem>
           </EventData>
-          {/* <EventData>
-            <EventDataItem>
-              <DateComponent className="event-data">
-                <p>
-                  NOV. 16-18 • <DateHighlight>12PM UTC</DateHighlight> •
-                </p>
-                <DateLocation>FESTIVAL LAND, [-62,58]</DateLocation>
-              </DateComponent>
-            </EventDataItem>
-          </EventData> */}
           <EventDataBottom>
             <EventDataItem>
               <SaveTheDate
@@ -112,6 +104,7 @@ const EventData = styled.div`
   align-items: center;
   justify-content: space-between;
   padding-top: 9px;
+  width: 100%;
   @media screen and (max-width: ${breakpoints.md}) {
     flex-direction: column;
   }
@@ -148,62 +141,56 @@ const DateComponent = styled.section`
   font-family: "Gothic";
   padding-left: 0;
   width: 100%;
-  text-align: justify;
+  text-align: center;
   
   @media screen and (min-width: ${breakpoints.l}) {
     font-size: 19px;
-    text-align: justify;
+    text-align: center;
   }
   
   @media screen and (min-width: ${breakpoints.xl}) {
     font-size: 24px;
-    letter-spacing: 4px;
     line-height: 120%;
     width: 100%;
   }
 `;
 
 const DateHighlight = styled.span`
-  // color: ${theme.accent};
-  color: #FFA450;
-  font-family: "HackerNoon";
+  color: ${theme.accent};
+  font-family: "KAMIKAZE";
   font-size: 24px;
   line-height: 32px;
   font-weight: 600;
-  letter-spacing: 2px;
   text-align: justify;
   
   @media screen and (min-width: ${breakpoints.l}) {
-    font-size: 26px;
+    font-size: 24px;
     line-height: 32px;
-    letter-spacing: 5px;
   }
 
   @media screen and (min-width: ${breakpoints.xl}) {
-    font-size: 42px;
+    font-size: 24px;
     line-height: 46px;
-    letter-spacing: 7px;
   }
 `;
 
 const DateLocation = styled.span`
-  font-family: "Gothic";
-  font-size: 24px;
+  font-family: "GOTHAM";
+  font-weight: 600;
+  font-size: 20px;
   line-height: 32px;
   font-weight: 600;
-  letter-spacing: 2px;
+  text-transform: uppercase;
   text-align: justify;
   
   @media screen and (min-width: ${breakpoints.l}) {
-    font-size: 26px;
+    font-size: 20px;
     line-height: 32px;
-    letter-spacing: 5px;
   }
 
   @media screen and (min-width: ${breakpoints.xl}) {
-    font-size: 42px;
+    font-size: 20px;
     line-height: 46px;
-    letter-spacing: 7px;
   }
 `;
 
@@ -218,7 +205,7 @@ const StyledLogo = styled.img`
 
 const SaveTheDate = styled(Button)`
 padding: 16px 24px;
-  width: 100%;
+width: 100%;
 `;
 
 const Decorator = styled.img`

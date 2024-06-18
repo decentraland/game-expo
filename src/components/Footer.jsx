@@ -120,9 +120,10 @@ const StyledLinksList = styled.ul`
 `;
 
 const PageLink = styled.li`
-  font-family: "Gothic";
+  font-family: "GOTHAM";
+  font-weight: 600;
   text-align: center;
-  line-height: 22px;
+  line-height: 16px;
   margin: 16px 0;
 
   a {

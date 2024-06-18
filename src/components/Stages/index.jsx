@@ -17,7 +17,7 @@ import stages from "./stages";
 
 const Stages = () => (
   <Section id="galleries">
-    <Container>
+    <Container style={{ paddingTop: "72px"}}>
       <Title>GALLERIES</Title>
       <StagesContainer>
         {stages.map(({ name, href, src, coord }) => (

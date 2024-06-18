@@ -29,8 +29,8 @@ const BannerMarquee = (props) => {
 const StyledBannerMarquee = styled.div`
   background: black;
   font-size: 16px;
-  font-family: "Helvetica";
-  font-weight: 700;
+  font-family: "GOTHAM";
+  font-weight: 600;
   padding-top: 12px;
   padding-bottom: 12px;
   display: flex;
@@ -49,10 +49,10 @@ const StyledBannerMarquee = styled.div`
       min-width: unset;
     }
     * {
-      font-family: "Gothic";
+      font-family: "GOTHAM";
       font-size: 16px;
       letter-spacing: 2px;
-      font-weight: 700;
+      font-weight: 600;
     }
   }
 `;
