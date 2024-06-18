@@ -40,10 +40,21 @@ const Navbar = (props) => {
     },
   ];
 
+  function scrollToTargetAdjusted(target){
+    var headerOffset = 75;
+    var elementPosition = target.getBoundingClientRect().top;
+    var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+  
+    window.scrollTo({
+         top: offsetPosition,
+         behavior: "smooth"
+    });
+}
+
   const scrollTo = (targetId) => {
     const target = document.getElementById(targetId);
     if (target) {
-      target.scrollIntoView();
+      scrollToTargetAdjusted(target)
     }
   };
 

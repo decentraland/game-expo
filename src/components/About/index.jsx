@@ -101,7 +101,7 @@ const Section = styled.section`
 
 const StyledAbout = styled.div`
   margin: auto;
-  padding: 96px 0;
+  padding: 72px 0;
 `;
 
 const AboutHeader = styled.section`

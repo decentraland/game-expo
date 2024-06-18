@@ -3,8 +3,8 @@ import theme, { breakpoints } from "../../../utils/theme";
 import scheduleBg from "../../images/schedule/SCHEDULE_BG.png"
 
 export const StyledLineUpSchedule = styled.div`
-  padding-top: 150px;
-  padding-bottom: 75px;
+  padding-top: 72px;
+  padding-bottom: 72px;
   background-image: url(${scheduleBg});
   background-size: cover;
   overflow: hidden;

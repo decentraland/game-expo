@@ -2,8 +2,8 @@ import styled from "styled-components";
 import theme, { breakpoints } from "../../../utils/theme";
 
 export const Section = styled.section`
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 72px;
+  padding-bottom: 72px;
   backdrop-filter: blur(2px);
 `;
 
@@ -19,13 +19,13 @@ export const Title = styled.h2`
     font-size: 48px;
   }
   @media screen and (min-width: ${breakpoints.l}) {
-    font-size: 80px;
+    font-size: 72px;
   }
   @media screen and (min-width: ${breakpoints.xl}) {
-    font-size: 80px;
+    font-size: 72px;
   }
   @media screen and (min-width: ${breakpoints.xxl}) {
-    font-size: 80px;
+    font-size: 72px;
   }
 `;
 

@@ -10,7 +10,7 @@ import hero3 from "../images/hero/hero3.svg"
 import hero4 from "../images/hero/hero4.svg" 
 import hero5 from "../images/hero/hero5.svg" 
 import herobg from "../images/hero/GX-HERO-BG.png"
-import herotitle from "../images/hero/DCL_GX_Logo.svg"
+import herotitle from "../images/hero/DCL_GX_Logo 1.png"
 import new_logo from "../images/logo_new.png"
 import { Container } from "./Container";
 

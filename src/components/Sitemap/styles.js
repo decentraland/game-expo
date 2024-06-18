@@ -2,8 +2,8 @@ import styled from "styled-components";
 import theme, { breakpoints } from '../../../utils/theme';
 
 export const Section = styled.section`
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 72px;
+    padding-bottom: 72px;
 `;
 
 export const Title = styled.h2`

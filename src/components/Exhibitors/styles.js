@@ -2,7 +2,8 @@ import styled from "styled-components";
 import theme, { breakpoints } from "../../../utils/theme";
 
 export const Section = styled.section`
-  padding-bottom: 150px;
+  padding-bottom: 72px;
+  padding-top: 72px;
   background: black;
 `;
 
