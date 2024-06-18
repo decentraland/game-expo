@@ -5,6 +5,7 @@ import starBust5 from "../../images/Starbust5.png";
 import starBust6 from "../../images/Starbust6.png";
 import starBust7 from "../../images/Starbust7.png";
 import aboutIcon from "../../images/about/abouticon.svg";
+import aboutBg from "../../images/about/ABOUT-BG.png"
 import { Container } from "../Container";
 
 const About = (props) => {
@@ -92,6 +93,10 @@ const AboutTitle = styled.h2`
 
 const Section = styled.section`
   position: relative;
+  background-image: url(${aboutBg});
+  background-repeat: no-repeat;
+  background-size: cover;
+
 `;
 
 const StyledAbout = styled.div`

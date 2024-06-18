@@ -48,7 +48,8 @@ export const Question = styled.div`
   display: flex;
   flex-grow: 1;
   justify-content: space-between;
-    font-family: "Gothic";
+    font-family: "GOTHAM";
+    font-weight: 600;
 
   p {
     max-width: 95%;
@@ -58,7 +59,7 @@ export const Question = styled.div`
 
 export const Answer = styled.p`
   p {
-    font-family: "Gotham", sans-serif;
+    font-family: "GOTHAM", sans-serif;
     font-weight: 300;
     margin-top: 12px;
     padding: 0 12px;

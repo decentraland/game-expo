@@ -21,17 +21,17 @@ export const questions = [
     question: "Where can I find the full event schedule?",
     answer: () => (
       <p>
-        To see all Art Week and MESH events, consult the schedule above or see
-        the <a href="https://decentraland.org/events/schedule/?id=ebf4f1e1-8cc2-4b02-a77b-2ed6a25674e3" target="_blank">Decentraland Art Week event page</a>.
+        To see all Game Expo events, consult the schedule above or see
+        the <a href="https://decentraland.org/events/event/?id=e5fcbaa3-8a51-4fbb-8ecb-89622d9e7eab" target="_blank">Decentraland Game Expo event page</a>.
       </p>
     ),
   },
   {
-    question: "How do I access Art Week?",
+    question: "How do I access Game Expo?",
     answer: () => (
       <p>
-        Art Week will be taking place in Decentraland's Art Plaza at (61,61). If
-        you're new to Decentraland, you can easily attend any Art Week event by
+        DCL Game Expo will be taking place in Decentraland's Game Expo Plaza at (0,81). If
+        you're new to Decentraland, you can easily attend any Game Expo event by
         clicking the 'Jump In' button at the bottom of each event listing. This
         will take you in-world where you can explore as your avatar.
       </p>
@@ -73,10 +73,10 @@ export const questions = [
     ),
   },
   {
-    question: "How do I keep up to date with Art Week News?",
+    question: "How do I keep up to date with Game Expo News?",
     answer: () => (
       <p>
-        Follow <a href="https://twitter.com/decentraland" target="_blank">@Decentraland</a> on Twitter and the <a href="https://twitter.com/hashtag/dclaw24?src=hashtag_click" target="_blank">#DCLAW24</a> hashtag for live
+        Follow <a href="https://twitter.com/decentraland" target="_blank">@Decentraland</a> on Twitter and the <a href="https://twitter.com/hashtag/dclgx24?src=hashtag_click" target="_blank">#DCLGX24</a> hashtag for live
         updates and <a href="https://decentraland.beehiiv.com/subscribe" target="_blank">subscribe</a> to Decentraland’s weekly newsletter.
       </p>
     ),
