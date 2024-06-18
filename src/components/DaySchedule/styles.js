@@ -12,7 +12,7 @@ export const StyledDayBody = styled.section`
   flex-direction: column;
   gap: 32px;
   padding: 64px;
-  border-radius: 42px;
+  border-radius: 16px;
   background: #000;
   border: 1px solid ${theme.accent};
   width: 100%;

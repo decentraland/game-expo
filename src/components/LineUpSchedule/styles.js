@@ -32,7 +32,7 @@ export const Title = styled.h2`
   font-family: "KAMIKAZE";
   text-align: center;
   letter-spacing: 10px;
-  color: ${theme.secondary}
+  color: #F9F5D4;
 
   @media screen and (min-width: ${breakpoints.md}) {
     font-size: 64px;
@@ -63,7 +63,7 @@ export const StyledLineUpBtnSection = styled.div`
   display: none;
   margin-top: 72px;
   overflow-x: auto;
-  border-radius: 42px;
+  border-radius: 20px;
   gap: 2px;
 
   @media screen and (min-width: 769px) {

@@ -15,6 +15,7 @@ import { motion } from "framer-motion";
 import DaySchedule from "../DaySchedule/index.jsx";
 import styled from "styled-components";
 import BannerMarquee from "../Marquee.jsx";
+import buttonborder from "../../images/buttonborder.png";
 
 // markup
 const LineUpSchedule = (props) => {
@@ -80,17 +81,23 @@ const LineUpSchedule = (props) => {
             </>
           )}
         </StyledLineUpBody>
-        <SaveTheDate
+        <ButtonContainer
           href="https://decentraland.org/blog/announcements/the-ultimate-guide-to-decentraland-game-expo-24"
           target="_blank"
         >
-          <p style={{ fontSize: "20px", textAlign: "center", width: "100%" }}>
-            Read the ultimate guide{" "}
-            <span>
-              <Polygon src={heroPolygon} />
-            </span>
-          </p>
-        </SaveTheDate>
+          <JumpInButton>Read the Ultimate Guide</JumpInButton>
+          <BorderImage
+            src={buttonborder}
+            alt="border"
+            style={{
+              position: "absolute",
+              right: "-16px",
+              width: "68px",
+              top: "50%",
+              transform: "translateY(-50%)",
+            }}
+          />
+        </ButtonContainer>
       </Container>
     </StyledLineUpSchedule>
   );
@@ -116,6 +123,7 @@ const MobileMenu = styled.div`
     display: block;
     width: 100%;
     margin-top: 90px;
+    margin-bottom: 20px;
   }
 `;
 
@@ -125,7 +133,7 @@ const SelectedDay = styled.div`
   padding-top: 24px;
   padding-bottom: 24px;
   background-color: black;
-  border: 1px solid #ffa450;
+  border: 1px solid #C445A0;
   border-radius: 32px;
   font-size: 32px;
   font-family: "Helvetica";
@@ -138,7 +146,7 @@ const DropdownMenu = styled(motion.div)`
   left: 0;
   width: 100%;
   background-color: black;
-  border: 1px solid #ffa450;
+  border: 1px solid #C445A0;
   border-radius: 32px;
 `;
 
@@ -152,7 +160,38 @@ const MenuItem = styled.div`
   font-family: "Helvetica";
   transition: background-color 0.3s ease;
   &:hover {
-    background-color: #ffa450;
+    background-color: #C445A0;
+  }
+`;
+const JumpInButton = styled.button`
+  clip-path: polygon(50% 0%, 100% 0, 100% 0, 83% 100%, 0 100%, 0% 60%, 0 0);
+  background-color: #c445a0;
+  padding-top: 20px;
+  border: none;
+  padding-bottom: 20px;
+  width: 100%;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: "Gotham";
+  font-weight: 700;
+  z-index: 1;
+  cursor: pointer;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+`;
+
+const BorderImage = styled.img``;
+
+const ButtonContainer = styled.a`
+  width: 400px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 32px;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+    transition: 0.2s;
   }
 `;
 

@@ -30,9 +30,7 @@ const Hero = () => {
           <EventDataBottom>
             <EventDataItem>
               <ButtonContainer onClick={() => console.log("hola")}>
-                <JumpInButton>
-                  Jump In
-                </JumpInButton>
+                <JumpInButton>Jump In</JumpInButton>
                 <BorderImage
                   src={buttonborder}
                   alt="border"
@@ -261,12 +259,13 @@ const JumpInButton = styled.button`
   padding-bottom: 16px;
   width: 100%;
   position: relative;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
   z-index: 1;
   cursor: pointer;
 `;
 
-const BorderImage = styled.img`
-`;
+const BorderImage = styled.img``;
 
 const ButtonContainer = styled.div`
   position: relative;
