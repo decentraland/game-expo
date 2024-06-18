@@ -9,6 +9,13 @@ import {
   YellowTitle,
   BlueTitle,
   LigthBlueTitle,
+  SubText,
+  SubTextContainer,
+  CustomImage,
+  JumpInButton,
+  BorderImage,
+  CustomSvg,
+  ButtonContainer,
 } from "./styles";
 import { Container } from "../Container";
 import { StaticImage } from "gatsby-plugin-image";
@@ -17,6 +24,8 @@ import { breakpoints } from "../../../utils/theme";
 import Button from "../Button";
 import styled from "styled-components";
 import heroPolygon from "../../images/hero/polygon2.svg";
+import map from "../../images/mapjune.png";
+import buttonborder from "../../images/buttonborder.png";
 
 const Sitemap = () => (
   <Section id="sitemap">
@@ -27,47 +36,62 @@ const Sitemap = () => (
           {/* <StaticImage
                     src={'../../images/DCL_AW_MAP 2.png'}
                 /> */}
-          <StaticImage src={"../../images/mapjune.png"} />
+          <CustomImage src={map} alt="Sitemap" />
         </Map>
         <TextContainer>
-          <div>
+          <SubTextContainer>
             <OrangeTitle>Blockchain Game Alliance Zone</OrangeTitle>
-            <p>B1 - Blockchain Game Alliance</p>
-            <p>B2 - UFORIKA - Ride to Survive</p>
-            <p>B3 - The Desolation</p>
-            <p>B4 - Clay Nation</p>
-            <p>B5 - Aura</p>
-            <p>B6 - Synergy Land</p>
-          </div>
-          <div>
+            <SubText>B1 - Blockchain Game Alliance</SubText>
+            <SubText>B2 - UFORIKA - Ride to Survive</SubText>
+            <SubText>B3 - The Desolation</SubText>
+            <SubText>B4 - Clay Nation</SubText>
+            <SubText>B5 - Aura</SubText>
+            <SubText>B6 - Synergy Land</SubText>
+          </SubTextContainer>
+          <SubTextContainer>
             <YellowTitle>Decentraland Games Zone</YellowTitle>
-            <p>B7 - Vroomway</p>
-            <p>B8 - Ratscape</p>
-            <p>B9 - Neon Crystal Maze</p>
-            <p>B10 - Dialogic</p>
-            <p>B11 - Soul Magic</p>
-            <p>B12 - The Cavern</p>
-            <p>B13 - Racetrack</p>
-          </div>
-          <div>
+            <SubText>B7 - Vroomway</SubText>
+            <SubText>B8 - Ratscape</SubText>
+            <SubText>B9 - Neon Crystal Maze</SubText>
+            <SubText>B10 - Dialogic</SubText>
+            <SubText>B11 - Soul Magic</SubText>
+            <SubText>B12 - The Cavern</SubText>
+            <SubText>B13 - Racetrack</SubText>
+          </SubTextContainer>
+          <SubTextContainer>
             <BlueTitle>RPG AND MMO ZONE</BlueTitle>
-            <p>B14 - World of Kogaea</p>
-            <p>B15 - DeFi Kingdoms</p>
-            <p>B16 - Legions 2029</p>
-            <p>B17 - Knights of Antrom</p>
-            <p>B18 - AnyMagik</p>
-            <p>B19 - Aavegotchi</p>
-          </div>
-          <div>
+            <SubText>B14 - World of Kogaea</SubText>
+            <SubText>B15 - DeFi Kingdoms</SubText>
+            <SubText>B16 - Legions 2029</SubText>
+            <SubText>B17 - Knights of Antrom</SubText>
+            <SubText>B18 - AnyMagik</SubText>
+            <SubText>B19 - Aavegotchi</SubText>
+          </SubTextContainer>
+          <SubTextContainer>
             <LigthBlueTitle>SPEED AND STRATEGY ZONE</LigthBlueTitle>
-            <p>B20 - Sandstorm</p>
-            <p>B21 - LootRush</p>
-            <p>B22 - MotoDEX</p>
-            <p>B23 - Space Traitor</p>
-            <p>B24 - Planet Mojo</p>
-            <p>B25 - Chibi Clash</p>
-          </div>
-          <div>JUMP IN</div>
+            <SubText>B20 - Sandstorm</SubText>
+            <SubText>B21 - LootRush</SubText>
+            <SubText>B22 - MotoDEX</SubText>
+            <SubText>B23 - Space Traitor</SubText>
+            <SubText>B24 - Planet Mojo</SubText>
+            <SubText>B25 - Chibi Clash</SubText>
+          </SubTextContainer>
+          <ButtonContainer>
+            <JumpInButton>
+              Jump In
+            </JumpInButton>
+            <BorderImage
+              src={buttonborder}
+              alt="border"
+              style={{
+                position: "absolute",
+                right: "-16px",
+                width: "56px",
+                top: "50%",
+                transform: "translateY(-50%)",
+              }}
+            />
+          </ButtonContainer>
         </TextContainer>
       </MapContainer>
       <SaveTheDate

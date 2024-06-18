@@ -1,5 +1,11 @@
 import styled from "styled-components";
 import theme, { breakpoints } from "../../../utils/theme";
+import { StaticImage } from "gatsby-plugin-image";
+
+export const CustomImage = styled.img`
+  height: 100%;
+  width: 100%;
+`;
 
 export const Section = styled.section`
   padding-top: 150px;
@@ -74,4 +80,49 @@ export const LigthBlueTitle = styled.h3`
 
 export const Map = styled.div`
   border: 4px solid #c445a0;
+`;
+
+export const SubText = styled.p`
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  font-family: "Gotham";
+`;
+
+export const SubTextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+`;
+
+export const JumpInButton = styled.button`
+  clip-path: polygon(50% 0%, 100% 0, 100% 0, 83% 100%, 0 100%, 0% 60%, 0 0);
+  background-color: #c445a0;
+  padding-top: 16px;
+  border: none;
+  padding-bottom: 16px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+    transition: 0.2s;
+  }
+`;
+
+export const BorderImage = styled.img`
+  &:hover {
+    opacity: 0.8;
+    transition: 0.2s;
+  }
+`;
+
+export const ButtonContainer = styled.div`
+  position: relative;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+    transition: 0.2s;
+  }
 `;
