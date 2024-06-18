@@ -1,1 +1,1 @@
-# DCL Art Week Site - Decentraland Art Week
+# DCLGX - Decentraland Game Expo
