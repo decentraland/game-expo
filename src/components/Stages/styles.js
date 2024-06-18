@@ -2,8 +2,8 @@ import styled from "styled-components";
 import theme, { breakpoints } from "../../../utils/theme";
 
 export const Section = styled.section`
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 120px;
+  padding-bottom: 64px;
   background: black;
 `;
 
@@ -37,6 +37,7 @@ export const ComingSoon = styled.p`
 export const StagesContainer = styled.div`
   display: flex;
   justify-content: center;
+  margin-top: 64px;
   flex-direction: column;
   gap: 16px;
   @media screen and (min-width: ${breakpoints.md}) {

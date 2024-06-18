@@ -12,7 +12,7 @@ export const Title = styled.h2`
   font-family: "KAMIKAZE";
   text-align: center;
   letter-spacing: 10px;
-
+  color: #F9F5D4;
   @media screen and (min-width: ${breakpoints.md}) {
     font-size: 64px;
   }
