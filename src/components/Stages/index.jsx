@@ -1,7 +1,6 @@
 import React from "react";
 import { Container } from "../Container";
 import {
-  Section,
   Stage,
   Title,
   StageCard,
@@ -12,9 +11,10 @@ import {
   StageButton,
   TitlesContainer,
 } from "../Exhibitors/styles";
-import { StagesContainer } from "./styles";
+import { StagesContainer, Section } from "./styles";
 import stages from "./stages";
 import games from "./games";
+
 
 const Stages = () => (
   <Section id="games">
