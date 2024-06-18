@@ -1,7 +1,7 @@
 import { rgba, lighten, darken, transparentize } from "polished";
 
 const themeConfig = {
-    accent: '#FFA450'
+    accent: '#C445A0'
 }
 
 const basicPalette = {

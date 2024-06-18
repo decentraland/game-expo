@@ -12,15 +12,15 @@ const BannerMarquee = (props) => {
         delay={props.delay && props.delay}
         gradient={false}
       >
-        • Decentraland Art Week 2024
-        •<DateHighlight> MARCH 26 - 29 </DateHighlight> • Decentraland Art Week 2024
-        •<DateHighlight> MARCH 26 - 29</DateHighlight> • Decentraland Art Week 2024
-        •<DateHighlight> MARCH 26 - 29</DateHighlight> • Decentraland Art Week 2024
-        •<DateHighlight> MARCH 26 - 29</DateHighlight>
-        • Decentraland Art Week 2024
-        •<DateHighlight> MARCH 26 - 29</DateHighlight>
-        • Decentraland Art Week 2024
-        •<DateHighlight> MARCH 26 - 29</DateHighlight>
+        • Decentraland Game Expo 2024
+        •<DateHighlight> JUNE 26 - 29 </DateHighlight> • Decentraland Game Expo 2024
+        •<DateHighlight> JUNE 26 - 29</DateHighlight> • Decentraland Game Expo 2024
+        •<DateHighlight> JUNE 26 - 29</DateHighlight> • Decentraland Game Expo 2024
+        •<DateHighlight> JUNE 26 - 29</DateHighlight>
+        • Decentraland Game Expo 2024
+        •<DateHighlight> JUNE 26 - 29</DateHighlight>
+        • Decentraland Game Expo 2024
+        •<DateHighlight> JUNE 26 - 29</DateHighlight>
       </Marquee>
     </StyledBannerMarquee>
   );

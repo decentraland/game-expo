@@ -9,8 +9,8 @@ import hero2 from "../images/hero/hero2.svg"
 import hero3 from "../images/hero/hero3.svg" 
 import hero4 from "../images/hero/hero4.svg" 
 import hero5 from "../images/hero/hero5.svg" 
-import herobg from "../images/hero/herobg.png"
-import herotitle from "../images/hero/logohero.png"
+import herobg from "../images/hero/GX-HERO-BG.png"
+import herotitle from "../images/hero/DCL_GX_Logo.svg"
 import new_logo from "../images/logo_new.png"
 import { Container } from "./Container";
 
@@ -19,24 +19,17 @@ const Hero = () => {
     <StyledHero sx={{ height: "100vh", display: "flex", alignItems: "center", }}>
       <Container>
         <LogoContainer>
-          <div style={{'justify-content': 'center', 'display': 'flex', gap: "24px"}}>
-            <HeroIcon src={hero1} />
-            <HeroIcon src={hero2} />
-            <HeroIcon src={hero3} />
-            <HeroIcon src={hero4} />
-            <HeroIcon src={hero5} />
-          </div>
           {/* <img src="dmf-logo-white.png" width="100%" /> */}
-          <img src={herotitle} width="100%" />
+          <img src={herotitle} width="70%" />
         </LogoContainer>
         <EventDetails>
         <EventData>
             <EventDataItem>
               <DateComponent className="event-data">
                 <DateHighlight>
-                  MAR. 26-29 • 
+                  JUNE. 26-29 • 
                 </DateHighlight>
-                <DateLocation> ART WEEK PLAZA, [61,61]</DateLocation>
+                <DateLocation> GAME EXPO PLAZA, [0,81]</DateLocation>
               </DateComponent>
             </EventDataItem>
           </EventData>
@@ -51,11 +44,6 @@ const Hero = () => {
             </EventDataItem>
           </EventData> */}
           <EventDataBottom>
-            <EventDataItem>
-              <a href="https://play.decentraland.org/" target="_blank">
-                <StyledLogo alt={"Decentraland Logo"} src={new_logo} />
-              </a>
-            </EventDataItem>
             <EventDataItem>
               <SaveTheDate
                 href="https://decentraland.org/play/?position=61%2C60&utm_org=dcl&utm_source=landing&utm_campaign=dclaw24"
@@ -87,7 +75,7 @@ const StyledHero = styled.div`
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-item: center;
   width: 100%;
   background-image: url(${herobg});
   background-size: cover;
@@ -98,6 +86,7 @@ export const LogoContainer = styled.div`
 display: flex;
 flex-direction: column;
 gap: 72px;
+align-items: center;
 @media screen and (min-width: ${breakpoints.md}) {
   
 }

@@ -23,11 +23,11 @@ const Navbar = (props) => {
       targetId: "lineup",
     },
     {
-      label: "GALLERIES",
-      targetId: "galleries",
+      label: "GAMES",
+      targetId: "games",
     },
     {
-      label: "EXPERIENCES",
+      label: "EXHIBITORS",
       targetId: "experiences",
     },
     {
