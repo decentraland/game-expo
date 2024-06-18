@@ -270,17 +270,9 @@ const JumpInButton = styled.button`
   position: relative;
   z-index: 1;
   cursor: pointer;
-  &:hover {
-    opacity: 0.8;
-    transition: 0.2s;
-  }
 `;
 
 const BorderImage = styled.img`
-  &:hover {
-    opacity: 0.8;
-    transition: 0.2s;
-  }
 `;
 
 const ButtonContainer = styled.div`
