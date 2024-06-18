@@ -170,3 +170,46 @@ export const TitlesContainer = styled.div`
   flex-direction: column;
   margin-top: 16px;
 `;
+
+export const FilterContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+  margin-top: 48px;
+  gap: 32px;
+`;
+
+export const FilterButton = styled.button`
+  border-radius: 76px;
+  height: 64px;
+  width: 156px;
+  padding: 12px 36px;
+  font-weight: 700;
+  font-size: 12px;
+  background: ${({ isSelected }) => (isSelected ? "#F9F5D4" : "#C445A0")};
+  color: ${({ isSelected }) => (isSelected ? "#C445A0" : "#fff")};
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 10px 3px rgba(196, 69, 160, 0.3);
+
+  &:hover {
+    background: #f9f5d4;
+    color: #c445a0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 76px;
+    background: rgba(196, 69, 160, 0.3);
+    filter: blur(6px);
+    z-index: -1;
+  }
+`;

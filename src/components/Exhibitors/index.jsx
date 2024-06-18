@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container } from "../Container";
 import {
   Section,
@@ -11,30 +11,61 @@ import {
   StageLocation,
   StageHover,
   StageButton,
-  StageNameHighlight
+  StageNameHighlight,
+  FilterButton,
+  FilterContainer
 } from "./styles";
-import highlights from "./highlights";
+import exhibitors from "./exhibitors";
 
-const Exhibitors = () => (
-  <Section id="exhibitors">
-    {/* <Container> */}
+const tagNames = {
+  All: "ALL",
+  rpg: "RPG & MMO Zone",
+  speed: "Speed & Strategy Zone",
+  decentraland: "Decentraland Zone",
+  bga: "BGA Zone"
+};
+
+const Exhibitors = () => {
+  const [filter, setFilter] = useState("All");
+
+  const handleFilterChange = (newFilter) => {
+    setFilter(newFilter);
+  };
+
+  const filteredExhibitors = exhibitors.filter((exhibitor) =>
+    filter === "All" ? true : exhibitor.tag === filter
+  );
+
+  return (
+    <Section id="exhibitors">
       <Title>EXHIBITORS</Title>
+      <FilterContainer>
+        {Object.entries(tagNames).map(([tag, name]) => (
+          <FilterButton
+            key={tag}
+            onClick={() => handleFilterChange(tag)}
+            isSelected={filter === tag}
+          >
+            {name}
+          </FilterButton>
+        ))}
+      </FilterContainer>
       <StagesContainer>
-        {highlights.map((experience, index) => (
-          <Stage key={index} href={experience.href} target="_blank">
+        {filteredExhibitors.map((exhibitor, index) => (
+          <Stage key={index} href={exhibitor.href} target="_blank">
             <StageCard>
-              <StageImage src={experience.src} />
+              <StageImage src={exhibitor.src} />
               <StageHover>
                 <StageButton>Jump in</StageButton>
               </StageHover>
             </StageCard>
-            <StageNameHighlight>{experience.name}</StageNameHighlight>
-            <StageLocation>{experience.location}</StageLocation>
+            <StageNameHighlight>{exhibitor.name}</StageNameHighlight>
+            <StageLocation>{exhibitor.location}</StageLocation>
           </Stage>
         ))}
       </StagesContainer>
-    {/* </Container> */}
-  </Section>
-);
+    </Section>
+  );
+};
 
 export default Exhibitors;

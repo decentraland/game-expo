@@ -28,7 +28,7 @@ const Navbar = (props) => {
     },
     {
       label: "EXHIBITORS",
-      targetId: "experiences",
+      targetId: "exhibitors",
     },
     {
       label: "MAP",
