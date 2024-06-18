@@ -17,7 +17,7 @@ import MerchBanner from "../components/MerchBanner";
 // import merchBanner from "../images/merchbanner-23.png";
 // import merchBanner from "../images/newbanner.png";
 import merchBanner from "../images/bannernew.png";
-import Highlights from "../components/Experiences";
+import Exhibitors from "../components/Exhibitors";
 
 const advancedMatching = {};
 const options = {
@@ -129,7 +129,7 @@ const IndexPage = () => {
           <BannerMarquee direction="right" />
           {/* <WatchTheTeaser setShowVideo={setShowVideo} setMuted={setMuted} /> */}
           <Stages />
-          <Highlights />
+          <Exhibitors />
           <BannerMarquee />
           <Sitemap />
           <Faq />
