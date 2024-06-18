@@ -131,7 +131,7 @@ const IndexPage = () => {
           <Stages />
           <Exhibitors />
           <BannerMarquee />
-          <Sitemap />
+          {/* <Sitemap /> */}
           <Faq />
           <Footer />
         </main>
