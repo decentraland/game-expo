@@ -42,7 +42,6 @@ export const TextTitle = styled.p`
 `;
 
 export const StagesContainer = styled.div`
-  margin: 32px 0;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
@@ -52,15 +51,17 @@ export const StagesContainer = styled.div`
   justify-items: center;
 
   @media screen and (min-width: ${breakpoints.md}) {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @media screen and (min-width: ${breakpoints.l}) {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
+  @media screen and (min-width: ${breakpoints.l}) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
   @media screen and (min-width: ${breakpoints.xl}) {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    max-width: 1600px;
+    margin: 0 auto;
   }
 `;
 

@@ -15,10 +15,10 @@ import {
 } from "./styles";
 import highlights from "./highlights";
 
-const Highlights = () => (
-  <Section id="experiences">
-    <Container>
-      <Title>HIGHLIGHTS</Title>
+const Exhibitors = () => (
+  <Section id="exhibitors">
+    {/* <Container> */}
+      <Title>EXHIBITORS</Title>
       <StagesContainer>
         {highlights.map((experience, index) => (
           <Stage key={index} href={experience.href} target="_blank">
@@ -33,8 +33,8 @@ const Highlights = () => (
           </Stage>
         ))}
       </StagesContainer>
-    </Container>
+    {/* </Container> */}
   </Section>
 );
 
-export default Highlights;
+export default Exhibitors;

@@ -3,7 +3,6 @@ import { Container } from "../Container";
 import {
   Section,
   Stage,
-  StagesContainer,
   Title,
   StageCard,
   StageImage,
@@ -12,15 +11,17 @@ import {
   StageHover,
   StageButton,
   TitlesContainer,
-} from "../Experiences/styles";
+} from "../Exhibitors/styles";
+import { StagesContainer } from "./styles";
 import stages from "./stages";
+import games from "./games";
 
 const Stages = () => (
-  <Section id="galleries">
+  <Section id="games">
     <Container>
-      <Title>GALLERIES</Title>
+      <Title>GAME JAM WINNERS</Title>
       <StagesContainer>
-        {stages.map(({ name, href, src, coord }) => (
+        {games.map(({ name, href, src, coord }) => (
           <Stage>
             <StageCard>
               <StageImage src={src} />
