@@ -12,15 +12,15 @@ const BannerMarquee = (props) => {
         delay={props.delay && props.delay}
         gradient={false}
       >
-        • Decentraland Art Week 2024
-        •<DateHighlight> MARCH 26 - 29 </DateHighlight> • Decentraland Art Week 2024
-        •<DateHighlight> MARCH 26 - 29</DateHighlight> • Decentraland Art Week 2024
-        •<DateHighlight> MARCH 26 - 29</DateHighlight> • Decentraland Art Week 2024
-        •<DateHighlight> MARCH 26 - 29</DateHighlight>
-        • Decentraland Art Week 2024
-        •<DateHighlight> MARCH 26 - 29</DateHighlight>
-        • Decentraland Art Week 2024
-        •<DateHighlight> MARCH 26 - 29</DateHighlight>
+        • Decentraland Game Expo 2024
+        •<DateHighlight> JUNE 26 - 29 </DateHighlight> • Decentraland Game Expo 2024
+        •<DateHighlight> JUNE 26 - 29</DateHighlight> • Decentraland Game Expo 2024
+        •<DateHighlight> JUNE 26 - 29</DateHighlight> • Decentraland Game Expo 2024
+        •<DateHighlight> JUNE 26 - 29</DateHighlight>
+        • Decentraland Game Expo 2024
+        •<DateHighlight> JUNE 26 - 29</DateHighlight>
+        • Decentraland Game Expo 2024
+        •<DateHighlight> JUNE 26 - 29</DateHighlight>
       </Marquee>
     </StyledBannerMarquee>
   );
@@ -29,8 +29,8 @@ const BannerMarquee = (props) => {
 const StyledBannerMarquee = styled.div`
   background: black;
   font-size: 16px;
-  font-family: "Helvetica";
-  font-weight: 700;
+  font-family: "GOTHAM";
+  font-weight: 600;
   padding-top: 12px;
   padding-bottom: 12px;
   display: flex;
@@ -49,10 +49,10 @@ const StyledBannerMarquee = styled.div`
       min-width: unset;
     }
     * {
-      font-family: "Gothic";
+      font-family: "GOTHAM";
       font-size: 16px;
       letter-spacing: 2px;
-      font-weight: 700;
+      font-weight: 600;
     }
   }
 `;

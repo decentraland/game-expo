@@ -1,13 +1,14 @@
 import { rgba, lighten, darken, transparentize } from "polished";
 
 const themeConfig = {
-    accent: '#FFA450'
+    accent: '#C445A0'
 }
 
 const basicPalette = {
     'black': '#000000',
     'white': '#FFFFFF',
     'background': '#040D2D',
+    "secondary": "#F9F5D4",
     'accent': themeConfig.accent,
     'blueGray': '#B8BEE5',
     'gray': '#CCCCCC'

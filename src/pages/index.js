@@ -8,7 +8,6 @@ import Banner from "../components/Banner";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import BannerMarquee from "../components/Marquee";
-import WatchTheTeaser from "../components/WatchTheTeaser";
 import About from "../components/About";
 import Faq from "../components/Faq";
 import Sitemap from "../components/Sitemap";
@@ -27,7 +26,7 @@ const options = {
 };
 
 const seo = {
-  title: "Decentraland Art Week",
+  title: "Decentraland Game Expo",
   description:
     "From 26-29 March 2024, Decentraland Art Week will spotlight the infinite potential of art and creativity in new realities.",
   image: "https://events-assets-099ac00.decentraland.org/poster/c08e664f65e0cdf1.jpg",
@@ -127,18 +126,12 @@ const IndexPage = () => {
           <About />
           <BannerMarquee />
           <LineUpSchedule />
+          <BannerMarquee direction="right" />
           {/* <WatchTheTeaser setShowVideo={setShowVideo} setMuted={setMuted} /> */}
           <Stages />
           <Exhibitors />
           <BannerMarquee />
-          <MerchBanner
-            src={merchBanner}
-            href="https://decentraland.org/marketplace/"
-            target="_blank"
-          />
-          <BannerMarquee direction="right" />
           <Sitemap />
-          <BannerMarquee />
           <Faq />
           <Footer />
         </main>

@@ -4,125 +4,113 @@ export const days = [
   {
     linkLabel: (
       <>
-        <span className="day-tag">Tuesday 26th</span>
+        <span className="day-tag">Wednesday 26th</span>
       </>
     ),
-    date: "Tuesday 26th",
+    date: "Wednesday 26th",
     events: [
       {
-        time: "00:00",
-        title: "VR DJ set by Oblinof",
-        coordinates: "53, 61"
+        time: "14:00 UTC Opening X Space",
+        title: "Beyond the Hype",
+        description: "What has Web3 Gaming Achieved Today?",
+        coordinates: "X.com"
       },
       {
-        time: "17:00",
-        title: "Artist Talk & Tour #1 by MESHfair",
-        coordinates: "61, 61"
+        time: "17:00 UTC",
+        title: "Mastering the Fun Factor",
+        description: "What makes a Web3 Game Engaging?",
+        coordinates: "0, 81"
       },
       {
-        time: "18:00",
-        title: "Performance by Vignesh",
-        coordinates: "53, 67"
+        time: "20:00 UTC",
+        title: "The Impact of AI on Web3 Gaming:",
+        description: "Innovation, Challenges and Opportunities (0,81)",
+        coordinates: "0, 81"
       },
       {
-        time: "22:00",
-        title: "Artist Talk & Tour #2 by MESHfair",
-        coordinates: "61, 61"
+        time: "22:00 UTC",
+        title: "So You Want to Launch a Web3 Game?:",
+        description: "The Latest Tools, Platforms, and Best Practices",
+        coordinates: "0, 81"
+      },
+      {
+        time: "23:00 UTC",
+        title: "Opening Party - Dollhouse x DCLGX",
+        coordinates: "0, 81"
       },
     ]
   },
   {
     linkLabel: (
       <>
-        <span className="day-tag">Wednesday 27th</span>
+        <span className="day-tag">Thursday 27th</span>
       </>
     ),
-    date: "Wednesday 27th",
+    date: "Thursday 27th",
     events: [
       {
-        time: "13:00",
-        title: "Performance by Harsh",
-        coordinates: "53, 67"
+        time: "18:00 UTC",
+        title: "Cross-Game Compatibility:",
+        description: "How to Build Bridges between Virtual Worlds",
+        coordinates: "0, 81"
       },
       {
-        time: "14:00",
-        title: "Guided Tour by Archimicia",
-        coordinates: "67, 53"
+        time: "19:00 UTC",
+        title: "The WIP Meetup at DCLGX",
+        coordinates: "0, 81"
       },
       {
-        time: "17:00",
-        title: "Artist Talk & Tour #3 by MESHfair",
-        coordinates: "61, 61"
-      },
-      {
-        time: "22:00",
-        title: "Artist Talk & Tour #4 by MESHfair",
-        coordinates: "61, 61"
+        time: "22:00 UTC",
+        title: "Leveraging True Ownership?",
+        description: "The Reality of Gaming NFTs and Web3 Assets",
+        coordinates: "0, 81"
       },
     ]
   },
   {
     linkLabel: (
       <>
-        <span className="day-tag">Thursday 28th</span>
+        <span className="day-tag">Friday 28th</span>
       </>
     ),
-    date: "Thursday 28th",
+    date: "Friday 28th",
     events: [
       {
-        time: "14:00",
-        title: "Guided Tour by Archimicia",
-        coordinates: "67, 53"
+        time: "20:00 UTC",
+        title: "Creator-Led Game Tour",
+        coordinates: "0, 81"
       },
       {
-        time: "15:00",
-        title: "Quest for the Labrynth of Egypt",
-        coordinates: "67, 67"
-      },
-      {
-        time: "17:00",
-        title: "Artist Talk & Tour #5 by MESHfair",
-        coordinates: "61, 61"
-      },
-      {
-        time: "19:00",
-        title: "Performance by Prerna",
-        coordinates: "53, 67"
-      },
-      {
-        time: "20:00",
-        title: "The WIP Meetup at MESHfair",
-        coordinates: "61, 61"
-      },
-      {
-        time: "21:00",
-        title: "Grand Reopening at Rapture",
-        coordinates: "-89, -66"
-      },
-      {
-        time: "22:00",
-        title: "Awards Gala by Decentraland",
-        coordinates: "61, 61"
-      },
-      {
-        time: "23:00",
-        title: "Afterparty by Lucid Dreams",
-        coordinates: "53, 53"
+        time: "22:00 UTC",
+        title: "Facing the Future:",
+        description: "Trends and Predictions in Blockchain Gaming",
+        coordinates: "0, 81"
       },
     ]
   },
   {
     linkLabel: (
       <>
-        <span className="day-tag">Friday 29th</span>
+        <span className="day-tag">Saturday 29th</span>
       </>
     ),
-    date: "Friday 29th",
+    date: "Saturday 29th",
     events: [
       {
-        time: "17:00",
-        title: "Playtime by MESHfair",
-        coordinates: "61, 61"
+        time: "16:00 UTC",
+        title: "Wrap Up X Space:",
+        description: " DCLGX Wearable Quests",
+        coordinates: "X.com"
+      },
+      {
+        time: "20:00 UTC",
+        title: "Creator-Led Game Tour",
+        coordinates: "0, 81"
+      },
+      {
+        time: "23:00 UTC",
+        title: "DCLGX Closing Party",
+        coordinates: "0, 81"
       },
     ]
   },

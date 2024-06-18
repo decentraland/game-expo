@@ -9,7 +9,7 @@ export const Section = styled.section`
 export const Title = styled.h2`
   font-size: 32px;
   margin-bottom: 32px;
-  font-family: "HackerNoon";
+  font-family: "KAMIKAZE";
   text-align: center;
   letter-spacing: 10px;
 
@@ -17,13 +17,13 @@ export const Title = styled.h2`
     font-size: 64px;
   }
   @media screen and (min-width: ${breakpoints.l}) {
-    font-size: 100px;
+    font-size: 75px;
   }
   @media screen and (min-width: ${breakpoints.xl}) {
-    font-size: 100px;
+    font-size: 75px;
   }
   @media screen and (min-width: ${breakpoints.xxl}) {
-    font-size: 100px;
+    font-size: 75px;
   }
 `;
 

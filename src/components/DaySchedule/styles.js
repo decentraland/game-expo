@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { breakpoints } from "../../../utils/theme";
+import theme, { breakpoints } from "../../../utils/theme";
 
 export const StyledDaySchedule = styled.div`
   display: flex;
@@ -11,7 +11,12 @@ export const StyledDayBody = styled.section`
   display: flex;
   flex-direction: column;
   gap: 32px;
+  padding: 64px;
+  border-radius: 42px;
+  background: #000;
+  border: 1px solid ${theme.accent};
   width: 100%;
+  margin-bottom: 42px;
 `;
 
 export const StyledDayHeader = styled.section`
@@ -24,8 +29,8 @@ export const StyledDayHeader = styled.section`
 export const StyledDayTitle = styled.h2`
   padding-bottom: 40px;
   line-height: 36px;
-  font-family: "Gothic";
-  font-weight: 500;
+  font-family: "GOTHAM";
+  font-weight: 600;
   font-size: 20px;
   color: #ffffff;
   letter-spacing: 0.22em;
@@ -40,11 +45,11 @@ export const StyledDayTitle = styled.h2`
 export const StyledDataItem = styled.div`
   display: flex;
   gap: 24px;
-  font-size: 32px;
+  font-size: 20px;
   align-items: start;
 `;
 
 export const StyledDataItemText = styled.span`
-  font-family: "Helvetica";
-  text-transform: uppercase;
+  font-family: "GOTHAM";
+  font-weight: 600;
 `

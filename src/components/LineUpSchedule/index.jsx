@@ -81,26 +81,23 @@ const LineUpSchedule = (props) => {
           )}
         </StyledLineUpBody>
         <SaveTheDate
-          href="https://decentraland.org/play/?position=61%2C60&utm_org=dcl&utm_source=landing&utm_campaign=dclaw24"
+          href="https://decentraland.org/blog/announcements/the-ultimate-guide-to-decentraland-game-expo-24"
           target="_blank"
         >
           <p style={{ fontSize: "20px", textAlign: "center", width: "100%" }}>
-            JUMP IN{" "}
+            Read the ultimate guide{" "}
             <span>
               <Polygon src={heroPolygon} />
             </span>
           </p>
         </SaveTheDate>
       </Container>
-      <div style={{ marginTop: "72px" }}>
-        <BannerMarquee direction="right" />
-      </div>
     </StyledLineUpSchedule>
   );
 };
 
 const SaveTheDate = styled(Button)`
-  width: 100%;
+  width: auto;
 `;
 
 const Polygon = styled.img`

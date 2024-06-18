@@ -9,8 +9,8 @@ import hero2 from "../images/hero/hero2.svg"
 import hero3 from "../images/hero/hero3.svg" 
 import hero4 from "../images/hero/hero4.svg" 
 import hero5 from "../images/hero/hero5.svg" 
-import herobg from "../images/hero/herobg.png"
-import herotitle from "../images/hero/logohero.png"
+import herobg from "../images/hero/GX-HERO-BG.png"
+import herotitle from "../images/hero/DCL_GX_Logo.svg"
 import new_logo from "../images/logo_new.png"
 import { Container } from "./Container";
 
@@ -19,13 +19,6 @@ const Hero = () => {
     <StyledHero sx={{ height: "100vh", display: "flex", alignItems: "center", }}>
       <Container>
         <LogoContainer>
-          <div style={{'justify-content': 'center', 'display': 'flex', gap: "24px"}}>
-            <HeroIcon src={hero1} />
-            <HeroIcon src={hero2} />
-            <HeroIcon src={hero3} />
-            <HeroIcon src={hero4} />
-            <HeroIcon src={hero5} />
-          </div>
           {/* <img src="dmf-logo-white.png" width="100%" /> */}
           <img src={herotitle} width="100%" />
         </LogoContainer>
@@ -34,28 +27,15 @@ const Hero = () => {
             <EventDataItem>
               <DateComponent className="event-data">
                 <DateHighlight>
-                  MAR. 26-29 • 
+                  JUNE. 26-29 • 
                 </DateHighlight>
-                <DateLocation> ART WEEK PLAZA, [61,61]</DateLocation>
+                <DateLocation> GAME EXPO PLAZA, [0,81]</DateLocation>
+                <br />
+                <DateLocation>DCLGX is a free event, open to all</DateLocation>
               </DateComponent>
             </EventDataItem>
           </EventData>
-          {/* <EventData>
-            <EventDataItem>
-              <DateComponent className="event-data">
-                <p>
-                  NOV. 16-18 • <DateHighlight>12PM UTC</DateHighlight> •
-                </p>
-                <DateLocation>FESTIVAL LAND, [-62,58]</DateLocation>
-              </DateComponent>
-            </EventDataItem>
-          </EventData> */}
           <EventDataBottom>
-            <EventDataItem>
-              <a href="https://play.decentraland.org/" target="_blank">
-                <StyledLogo alt={"Decentraland Logo"} src={new_logo} />
-              </a>
-            </EventDataItem>
             <EventDataItem>
               <SaveTheDate
                 href="https://decentraland.org/play/?position=61%2C60&utm_org=dcl&utm_source=landing&utm_campaign=dclaw24"
@@ -87,7 +67,7 @@ const StyledHero = styled.div`
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-item: center;
   width: 100%;
   background-image: url(${herobg});
   background-size: cover;
@@ -98,6 +78,7 @@ export const LogoContainer = styled.div`
 display: flex;
 flex-direction: column;
 gap: 72px;
+align-items: center;
 @media screen and (min-width: ${breakpoints.md}) {
   
 }
@@ -123,6 +104,7 @@ const EventData = styled.div`
   align-items: center;
   justify-content: space-between;
   padding-top: 9px;
+  width: 100%;
   @media screen and (max-width: ${breakpoints.md}) {
     flex-direction: column;
   }
@@ -159,62 +141,56 @@ const DateComponent = styled.section`
   font-family: "Gothic";
   padding-left: 0;
   width: 100%;
-  text-align: justify;
+  text-align: center;
   
   @media screen and (min-width: ${breakpoints.l}) {
     font-size: 19px;
-    text-align: justify;
+    text-align: center;
   }
   
   @media screen and (min-width: ${breakpoints.xl}) {
     font-size: 24px;
-    letter-spacing: 4px;
     line-height: 120%;
     width: 100%;
   }
 `;
 
 const DateHighlight = styled.span`
-  // color: ${theme.accent};
-  color: #FFA450;
-  font-family: "HackerNoon";
+  color: ${theme.accent};
+  font-family: "KAMIKAZE";
   font-size: 24px;
   line-height: 32px;
   font-weight: 600;
-  letter-spacing: 2px;
   text-align: justify;
   
   @media screen and (min-width: ${breakpoints.l}) {
-    font-size: 26px;
+    font-size: 24px;
     line-height: 32px;
-    letter-spacing: 5px;
   }
 
   @media screen and (min-width: ${breakpoints.xl}) {
-    font-size: 42px;
+    font-size: 24px;
     line-height: 46px;
-    letter-spacing: 7px;
   }
 `;
 
 const DateLocation = styled.span`
-  font-family: "Gothic";
-  font-size: 24px;
+  font-family: "GOTHAM";
+  font-weight: 600;
+  font-size: 20px;
   line-height: 32px;
   font-weight: 600;
-  letter-spacing: 2px;
+  text-transform: uppercase;
   text-align: justify;
   
   @media screen and (min-width: ${breakpoints.l}) {
-    font-size: 26px;
+    font-size: 20px;
     line-height: 32px;
-    letter-spacing: 5px;
   }
 
   @media screen and (min-width: ${breakpoints.xl}) {
-    font-size: 42px;
+    font-size: 20px;
     line-height: 46px;
-    letter-spacing: 7px;
   }
 `;
 
@@ -229,7 +205,7 @@ const StyledLogo = styled.img`
 
 const SaveTheDate = styled(Button)`
 padding: 16px 24px;
-  width: 100%;
+width: 100%;
 `;
 
 const Decorator = styled.img`

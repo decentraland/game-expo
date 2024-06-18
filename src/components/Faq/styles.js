@@ -9,7 +9,9 @@ export const Section = styled.section`
 
 export const Title = styled.h2`
   font-size: 32px;
-  font-family: Gothic;
+  font-family: GOTHAM;
+  font-weight: 600;
+  color: ${theme.secondary}
   letter-spacing: 10px;
   margin-bottom: 40px;
 

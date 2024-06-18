@@ -23,11 +23,11 @@ const Navbar = (props) => {
       targetId: "lineup",
     },
     {
-      label: "GALLERIES",
-      targetId: "galleries",
+      label: "GAMES",
+      targetId: "games",
     },
     {
-      label: "EXPERIENCES",
+      label: "EXHIBITORS",
       targetId: "experiences",
     },
     {
@@ -127,9 +127,9 @@ const MenuListMobile = styled(motion.ul)`
 `;
 
 const MenuItemMobile = styled.li`
-  font-family: "Gothic";
+  font-family: "GOTHAM";
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 2px;
   cursor: pointer;
 
@@ -219,9 +219,9 @@ const LogoContainer = styled.a`
 `;
 
 const MenuItem = styled.li`
-  font-family: "Gothic";
+  font-family: "GOTHAM";
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 600;
   padding-left: 40px;
   letter-spacing: 2px;
   cursor: pointer;
