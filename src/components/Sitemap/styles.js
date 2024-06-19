@@ -5,6 +5,7 @@ import { StaticImage } from "gatsby-plugin-image";
 export const CustomImage = styled.img`
   height: 100%;
   width: 100%;
+  object-fit: cover;
 `;
 
 export const Section = styled.section`
@@ -47,32 +48,36 @@ export const MapContainer = styled.div`
 export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 12px;
 `;
 
 export const OrangeTitle = styled.h3`
-  font-size: 24px;
+  font-size: 20px;
   color: #ff9b2f;
+  font-weight: 400;
   text-transform: uppercase;
   font-family: "KAMIKAZE";
 `;
 
 export const YellowTitle = styled.h3`
-  font-size: 24px;
+  font-size: 20px;
+  font-weight: 400;
   color: #d4f017;
   text-transform: uppercase;
   font-family: "KAMIKAZE";
 `;
 
 export const BlueTitle = styled.h3`
-  font-size: 24px;
+  font-size: 20px;
+  font-weight: 400;
   color: #8c65ff;
   text-transform: uppercase;
   font-family: "KAMIKAZE";
 `;
 
 export const LigthBlueTitle = styled.h3`
-  font-size: 24px;
+  font-size: 20px;
+  font-weight: 400;
   color: #2dddbf;
   text-transform: uppercase;
   font-family: "KAMIKAZE";
@@ -84,7 +89,7 @@ export const Map = styled.div`
 
 export const SubText = styled.p`
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 400;
   color: #fff;
   font-family: "Gotham";
 `;
@@ -148,10 +153,13 @@ export const SecondBorderImage = styled.img``;
 export const SecondButtonContainer = styled.a`
   position: relative;
   cursor: pointer;
-  width: 400px;
   margin: 0 auto;
+  width: 100%;
   &:hover {
     opacity: 0.8;
     transition: 0.2s;
+  }
+  @media screen and (min-width: 769px) {
+    width: 400px;
   }
 `;

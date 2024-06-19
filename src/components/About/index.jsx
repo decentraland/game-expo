@@ -47,7 +47,10 @@ const About = (props) => {
               </AboutParagraphItem>
             </AboutBodyText>
           </Aboutbody>
-          <ButtonContainer href="https://decentraland.beehiiv.com/subscribe?utm_source=artweek.decentraland.org&utm_medium=organic&utm_campaign=DCLAW24" target="_blank">
+          <ButtonContainer
+            href="https://decentraland.beehiiv.com/subscribe?utm_source=artweek.decentraland.org&utm_medium=organic&utm_campaign=DCLAW24"
+            target="_blank"
+          >
             <JumpInButton>SIGN UP FOR THE DECENTRALAND NEWSLETTER</JumpInButton>
             <BorderImage
               src={buttonborder}
@@ -154,7 +157,7 @@ const AboutBodyText = styled.div`
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    max-width: 468px;
+    max-width: 532px;
   }
 `;
 
@@ -303,19 +306,23 @@ const ButtonDecorator = styled.img`
 const JumpInButton = styled.button`
   clip-path: polygon(50% 0%, 100% 0, 100% 0, 83% 100%, 0 100%, 0% 60%, 0 0);
   background-color: #c445a0;
-  padding-top: 20px;
+  padding-top: 26px;
   border: none;
   padding-bottom: 20px;
   width: 100%;
   position: relative;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 10px;
   font-family: "Gotham";
   font-weight: 700;
   z-index: 1;
   cursor: pointer;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
+  @media screen and (min-width: 769px) {
+    font-size: 16px;
+    padding-top: 20px;
+  }
 `;
 
 const BorderImage = styled.img``;

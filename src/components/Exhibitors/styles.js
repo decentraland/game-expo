@@ -58,11 +58,12 @@ export const StagesContainer = styled.div`
 
   @media screen and (min-width: ${breakpoints.l}) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 85%;
   }
 
   @media screen and (min-width: ${breakpoints.xl}) {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    max-width: 1600px;
+    max-width: 90%;
     margin: 0 auto;
   }
 `;
@@ -186,10 +187,12 @@ export const FilterButton = styled.button`
   border-radius: 76px;
   height: 64px;
   width: 156px;
-  padding: 12px 36px;
+  padding: 12px 28px;
   font-weight: 700;
   font-size: 12px;
-  background: ${({ isSelected }) => (isSelected ? "#F9F5D4" : "#C445A0")};
+  border: none;
+  outline: none;
+  background: ${({ isSelected }) => (isSelected ? "#f7f3d2" : "#C445A0")};
   color: ${({ isSelected }) => (isSelected ? "#C445A0" : "#fff")};
   cursor: pointer;
   transition: background 0.3s, color 0.3s, box-shadow 0.3s;
@@ -198,7 +201,7 @@ export const FilterButton = styled.button`
   box-shadow: 0 0 10px 3px rgba(196, 69, 160, 0.3);
 
   &:hover {
-    background: #f9f5d4;
+    background: #f7f3d2;
     color: #c445a0;
   }
 

@@ -24,7 +24,7 @@ export const days = [
       {
         time: "20:00 UTC",
         title: "The Impact of AI on Web3 Gaming:",
-        description: "Innovation, Challenges and Opportunities (0,81)",
+        description: "Innovation, Challenges and Opportunities",
         coordinates: "0, 81"
       },
       {

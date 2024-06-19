@@ -133,7 +133,7 @@ const SelectedDay = styled.div`
   padding-top: 24px;
   padding-bottom: 24px;
   background-color: black;
-  border: 1px solid #C445A0;
+  border: 1px solid #c445a0;
   border-radius: 32px;
   font-size: 32px;
   font-family: "Helvetica";
@@ -146,7 +146,7 @@ const DropdownMenu = styled(motion.div)`
   left: 0;
   width: 100%;
   background-color: black;
-  border: 1px solid #C445A0;
+  border: 1px solid #c445a0;
   border-radius: 32px;
 `;
 
@@ -160,7 +160,7 @@ const MenuItem = styled.div`
   font-family: "Helvetica";
   transition: background-color 0.3s ease;
   &:hover {
-    background-color: #C445A0;
+    background-color: #c445a0;
   }
 `;
 const JumpInButton = styled.button`
@@ -184,7 +184,7 @@ const JumpInButton = styled.button`
 const BorderImage = styled.img``;
 
 const ButtonContainer = styled.a`
-  width: 400px;
+  width: 100%;
   margin: 0 auto;
   position: relative;
   margin-top: 32px;
@@ -192,6 +192,9 @@ const ButtonContainer = styled.a`
   &:hover {
     opacity: 0.8;
     transition: 0.2s;
+  }
+  @media screen and (min-width: 769px) {
+    width: 400px;
   }
 `;
 
