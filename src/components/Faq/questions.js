@@ -22,7 +22,7 @@ export const questions = [
     answer: () => (
       <p>
         To see all Game Expo events, consult the schedule above or see
-        the <a href="https://decentraland.org/events/event/?id=e5fcbaa3-8a51-4fbb-8ecb-89622d9e7eab" target="_blank">Decentraland Game Expo event page</a>.
+        the <a href="https://decentraland.org/events/schedule/?id=3822c0e5-aaf7-4b74-b174-796590042a09&utm_org=dcl&utm_source=landing&utm_campaign=dclgx" target="_blank">Decentraland Game Expo event page</a>.
       </p>
     ),
   },
@@ -76,8 +76,8 @@ export const questions = [
     question: "How do I keep up to date with Game Expo News?",
     answer: () => (
       <p>
-        Follow <a href="https://twitter.com/decentraland" target="_blank">@Decentraland</a> on Twitter and the <a href="https://twitter.com/hashtag/dclgx24?src=hashtag_click" target="_blank">#DCLGX24</a> hashtag for live
-        updates and <a href="https://decentraland.beehiiv.com/subscribe" target="_blank">subscribe</a> to Decentraland’s weekly newsletter.
+        Follow <a href="https://x.com/decentraland" target="_blank">@Decentraland</a> on Twitter and the <a href="https://x.com/search?q=%23dclgx&src=typed_query" target="_blank">#DCLGX24</a> hashtag for live
+        updates and <a href="https://decentraland.beehiiv.com/subscribe?utm_source=decentraland.org/gameexpo&utm_medium=organic&utm_campaign=DCLGX" target="_blank">subscribe</a> to Decentraland’s weekly newsletter.
       </p>
     ),
   },
@@ -87,7 +87,7 @@ export const questions = [
       <p>
         Anyone can become a Decentraland creator, all it takes is a little
         knowhow and endless creative ideas! Everything you need to know to start
-        your creative journey can be found at <a href="https://decentraland.org/create/" target="_blank">decentraland.org/create.</a>
+        your creative journey can be found at <a href="https://decentraland.org/create/?utm_source=landing&utm_medium=organic&utm_campaign=dclgx" target="_blank">decentraland.org/create.</a>
       </p>
     ),
   },

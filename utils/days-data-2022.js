@@ -35,7 +35,8 @@ export const days = [
       },
       {
         time: "23:00 UTC",
-        title: "Opening Party - Dollhouse x DCLGX",
+        title: "Opening Party",
+        subtitle: "- Dollhouse x DCLGX",
         coordinates: "0, 81"
       },
     ]
@@ -109,7 +110,9 @@ export const days = [
       },
       {
         time: "23:00 UTC",
-        title: "DCLGX Closing Party",
+        // title: "DCLGX Closing Party",
+        title: "Closing Party: Goodbye DCLGX",
+        subtitle: "InnKeeper, Zhest and Zoorab",
         coordinates: "0, 81"
       },
     ]

@@ -20,7 +20,7 @@ const Hero = () => {
           <EventData>
             <EventDataItem>
               <DateComponent className="event-data">
-                <DateHighlight>JUNE. 26-29 •</DateHighlight>
+                <DateHighlight>JUNE. 26 - 29 •</DateHighlight>
                 <DateLocation> GAME EXPO PLAZA, [0,81]</DateLocation>
                 <br />
                 <DateLocation>DCLGX is a free event, open to all</DateLocation>
@@ -29,7 +29,7 @@ const Hero = () => {
           </EventData>
           <EventDataBottom>
             <EventDataItem>
-              <ButtonContainer onClick={() => console.log("hola")}>
+              <ButtonContainer href="https://decentraland.org/events/event/?id=e5fcbaa3-8a51-4fbb-8ecb-89622d9e7eab&utm_source=landing&utm_medium=organic&utm_campaign=dclgx" target="_blank">
                 <JumpInButton>Jump In</JumpInButton>
                 <BorderImage
                   src={buttonborder}
@@ -267,7 +267,7 @@ const JumpInButton = styled.button`
 
 const BorderImage = styled.img``;
 
-const ButtonContainer = styled.div`
+const ButtonContainer = styled.a`
   position: relative;
   cursor: pointer;
   width: 220px;

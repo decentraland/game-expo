@@ -120,7 +120,7 @@ export const JumpInButton = styled.button`
 
 export const BorderImage = styled.img``;
 
-export const ButtonContainer = styled.div`
+export const ButtonContainer = styled.a`
   position: relative;
   cursor: pointer;
   width: 215px;
