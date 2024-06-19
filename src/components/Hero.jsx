@@ -158,19 +158,17 @@ const DateComponent = styled.section`
 const DateHighlight = styled.span`
   color: ${theme.accent};
   font-family: "KAMIKAZE";
-  font-weight: 400;
+  font-weight: 300;
   font-size: 24px;
   line-height: 32px;
-  font-weight: 600;
   text-align: justify;
-
   @media screen and (min-width: ${breakpoints.l}) {
     font-size: 24px;
     line-height: 32px;
   }
 
   @media screen and (min-width: ${breakpoints.xl}) {
-    font-size: 24px;
+    font-size: 28px;
     line-height: 46px;
   }
 `;
@@ -190,7 +188,7 @@ const DateLocation = styled.span`
   }
 
   @media screen and (min-width: ${breakpoints.xl}) {
-    font-size: 20px;
+    font-size: 22px;
     line-height: 46px;
   }
 `;

@@ -156,7 +156,7 @@ const AboutBodyText = styled.div`
   @media screen and (min-width: ${breakpoints.md}) {
     font-size: 18px;
     line-height: 27px;
-    font-weight: 400;
+    font-weight: 300;
     max-width: 532px;
   }
 `;
