@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import theme, { breakpoints } from "../../utils/theme";
-import { Twitter } from "../components/icons/Vector-Twitter.js";
-import { Discord } from "../components/icons/Vector-Discord.js";
-import { Instagram } from "../components/icons/Vector-Instagram.js";
-import border from "../images/navbar-border.png";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { motion } from "framer-motion";
 import new_logo from "../images/logo_new.png"

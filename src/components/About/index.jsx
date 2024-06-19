@@ -1,12 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import theme, { breakpoints } from "../../../utils/theme";
-import starBust5 from "../../images/Starbust5.png";
-import starBust6 from "../../images/Starbust6.png";
-import starBust7 from "../../images/Starbust7.png";
-import aboutIcon from "../../images/about/abouticon.svg";
-import about1 from "../../images/about/about1.png";
-import aboutall from "../../images/about/aboutall.png";
 import saveall from "../../images/about/saveall.png";
 import aboutBg from "../../images/about/ABOUT-BG.png";
 import { Container } from "../Container";

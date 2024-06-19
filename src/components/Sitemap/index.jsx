@@ -14,19 +14,15 @@ import {
   CustomImage,
   JumpInButton,
   BorderImage,
-  CustomSvg,
   ButtonContainer,
   SecondBorderImage,
   SecondButtonContainer,
   SecondJumpInButton,
 } from "./styles";
 import { Container } from "../Container";
-import { StaticImage } from "gatsby-plugin-image";
-import polygon from "../../images/STD-polygon.svg";
 import { breakpoints } from "../../../utils/theme";
 import Button from "../Button";
 import styled from "styled-components";
-import heroPolygon from "../../images/hero/polygon2.svg";
 import map from "../../images/mapjune.png";
 import buttonborder from "../../images/buttonborder.png";
 
