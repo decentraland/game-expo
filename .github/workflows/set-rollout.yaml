@@ -24,7 +24,7 @@ jobs:
           packageVersion: ${{ github.event.deployment.payload.packageVersion }}
 
           # Rollout information
-          deploymentPath: "artweek"
+          deploymentPath: "gameexpo"
           deploymentEnvironment: "zone"
           deploymentName: "_site"
           percentage: 100
@@ -44,7 +44,7 @@ jobs:
           packageVersion: ${{ github.event.deployment.payload.packageVersion }}
 
           # Rollout information
-          deploymentPath: "artweek"
+          deploymentPath: "gameexpo"
           deploymentEnvironment: "today"
           deploymentName: "_site"
           percentage: 100

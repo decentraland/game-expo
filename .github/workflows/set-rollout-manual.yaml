@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       packageVersion:
-        description: "NPM Version of the release (@dcl/art-week-site)"
+        description: "NPM Version of the release (@dcl/game-expo-site)"
         required: true
         default: ""
       deploymentEnvironment:
@@ -36,11 +36,11 @@ jobs:
           sha: ${{ github.sha }}
 
           # CDN information
-          packageName: "@dcl/art-week-site"
+          packageName: "@dcl/game-expo-site"
           packageVersion: ${{ github.event.inputs.packageVersion }}
 
           # Rollout information
-          deploymentPath: "artweek"
+          deploymentPath: "gameexpo"
           deploymentEnvironment: ${{ github.event.inputs.deploymentEnvironment }}
           deploymentName: "_site"
           percentage: ${{ github.event.inputs.rolloutPercentage }}

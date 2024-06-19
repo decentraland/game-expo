@@ -1,7 +1,7 @@
 {
-  "name": "@dcl/art-week-site",
+  "name": "@dcl/game-expo-site",
   "version": "1.0.0",
-  "description": "Art Week",
+  "description": "Game Expo Site",
   "author": "Decentraland",
   "keywords": [
     "gatsby"
@@ -43,7 +43,7 @@
   "homepage": "https://decentraland.org",
   "repository": {
     "type": "git",
-    "url": "https://github.com/decentraland/artweek.git"
+    "url": "https://github.com/decentraland/game-expo.git"
   },
   "devDependencies": {
     "glob": "^10.3.10"

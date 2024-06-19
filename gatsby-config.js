@@ -4,11 +4,11 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://decentraland.org/artweek",
-    title: "Decentraland Art Week",
+    siteUrl: "https://decentraland.org/gameexpo",
+    title: "Decentraland Game Expo",
   },
   assetPrefix: process.env.ASSET_PREFIX,
-  pathPrefix: "/artweek",
+  pathPrefix: "/gameexpo",
   plugins: [
     "gatsby-plugin-styled-components",
     "gatsby-plugin-image",
