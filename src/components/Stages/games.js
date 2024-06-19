@@ -15,25 +15,25 @@ import neonhockey from "../../images/games/neonhockey.png"
 export default [
   {
     name: "Where Pigs Fly",
-    href: "https://play.decentraland.org/?position=61%2C61",
+    href: "https://decentraland.org/play/?position=-8,88",
     src: pigsfly,
     coord: "-8,88",
   },
   {
     name: "Neon City",
-    href: "https://play.decentraland.org/?position=53%2C53",
+    href: "https://decentraland.org/play/?position=-8,74",
     src: neoncity,
     coord: "-8,74",
   },
   {
     name: "Bumperz",
-    href: "https://play.decentraland.org/?position=67%2C67",
+    href: "https://decentraland.org/play/?position=6,88",
     src: bumperz,
     coord: "6,88",
   },
   {
     name: "Neon Hockey",
-    href: "https://play.decentraland.org/?position=67%2C53",
+    href: "https://decentraland.org/play/?position=6,74",
     src: neonhockey,
     coord: "6,74",
   },

@@ -11,7 +11,7 @@ export const Title = styled.h2`
   font-size: 32px;
   font-family: GOTHAM;
   font-weight: 600;
-  color: ${theme.secondary}
+  color: #F9F5D4;
   letter-spacing: 10px;
   margin-bottom: 40px;
 
@@ -19,13 +19,13 @@ export const Title = styled.h2`
     font-size: 48px;
   }
   @media screen and (min-width: ${breakpoints.l}) {
-    font-size: 72px;
+    font-size: 54px;
   }
   @media screen and (min-width: ${breakpoints.xl}) {
-    font-size: 72px;
+    font-size: 54px;
   }
   @media screen and (min-width: ${breakpoints.xxl}) {
-    font-size: 72px;
+    font-size: 54px;
   }
 `;
 
