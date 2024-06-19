@@ -24,7 +24,7 @@ const options = {
 const seo = {
   title: "Decentraland Game Expo",
   description:
-    "From 26-29 March 2024, Decentraland Art Week will spotlight the infinite potential of art and creativity in new realities.",
+    "Explore the future of Web3 gaming at the first-ever Decentraland Game Expo! DCLGX is a must-see event showcasing some of the best games built on the blockchain. Discover titles from leading studios and talented independent creators, plus exclusive new Decentraland games built just for the expo.",
   image: "https://events-assets-099ac00.decentraland.org/poster/c08e664f6668b3c0.png",
 };
 
