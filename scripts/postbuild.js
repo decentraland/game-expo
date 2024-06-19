@@ -6,9 +6,9 @@ const PACKAGE_JSON_PUBLIC_PATH = "./public/package.json";
 const PACKAGE_JSON_TEMP_PATH = "./package.json.tmp";
 
 const allFiles = glob.globSync("public/**/*.!(html)");
-fs.mkdirSync("public/artweek", { recursive: true });
+fs.mkdirSync("public/gameexpo", { recursive: true });
 for (const file of allFiles) {
-  const newFilePath = file.replace("public", "public/artweek");
+  const newFilePath = file.replace("public", "public/gameexpo");
   const newFileDirectory = path.dirname(newFilePath);
   if (!fs.existsSync(newFileDirectory)) {
     fs.mkdirSync(newFileDirectory, { recursive: true });
