@@ -5,18 +5,25 @@ export const StyledDaySchedule = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin: 0 auto;
+  @media screen and (min-width: 769px) {
+    width: 70%;
+  }
 `;
 
 export const StyledDayBody = styled.section`
   display: flex;
   flex-direction: column;
   gap: 32px;
-  padding: 64px;
+  padding: 24px;
   border-radius: 16px;
   background: #000;
   border: 1px solid ${theme.accent};
   width: 100%;
   margin-bottom: 42px;
+  @media screen and (min-width: 769px) {
+    padding: 64px;
+  }
 `;
 
 export const StyledDayHeader = styled.section`
@@ -52,4 +59,4 @@ export const StyledDataItem = styled.div`
 export const StyledDataItemText = styled.span`
   font-family: "GOTHAM";
   font-weight: 600;
-`
+`;

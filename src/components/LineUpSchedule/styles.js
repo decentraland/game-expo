@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import theme, { breakpoints } from "../../../utils/theme";
-import scheduleBg from "../../images/schedule/SCHEDULE_BG.png"
+import scheduleBg from "../../images/schedule/SCHEDULE_BG.png";
 
 export const StyledLineUpSchedule = styled.div`
   padding-top: 72px;
@@ -33,7 +33,7 @@ export const Title = styled.h2`
   font-weight: 400;
   text-align: center;
   letter-spacing: 10px;
-  color: #F9F5D4;
+  color: #f9f5d4;
 
   @media screen and (min-width: ${breakpoints.md}) {
     font-size: 64px;
@@ -66,11 +66,13 @@ export const StyledLineUpBtnSection = styled.div`
   overflow-x: auto;
   border-radius: 20px;
   gap: 2px;
-
   @media screen and (min-width: 769px) {
     flex-direction: row;
     display: flex;
     align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 72px;
     justify-content: space-between;
   }
 `;
@@ -82,10 +84,9 @@ export const StyledLineUpBtn = styled.button`
   box-sizing: border-box;
   font-family: "KAMIKAZE";
   font-weight: 400;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 18px;
   outline: none !important;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
 
   /* Auto layout */
@@ -93,11 +94,10 @@ export const StyledLineUpBtn = styled.button`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 32px 36px;
   gap: 10px;
-  height: 70px;
-    background: ${theme.accent};
-    color: ${theme.secondary};
+  height: 50px;
+  background: ${theme.accent};
+  color: ${theme.secondary};
 
   /* Inside auto layout */
   color: #ffffff;

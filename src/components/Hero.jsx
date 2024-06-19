@@ -10,7 +10,7 @@ import buttonborder from "../images/buttonborder.png";
 
 const Hero = () => {
   return (
-    <StyledHero sx={{ height: "100vh", display: "flex", alignItems: "center" }}>
+    <StyledHero sx={{ height: "70vh", display: "flex", alignItems: "center" }}>
       <Container>
         <LogoContainer>
           {/* <img src="dmf-logo-white.png" width="100%" /> */}
@@ -63,7 +63,7 @@ const HeroIcon = styled.img`
 
 const StyledHero = styled.div`
   position: relative;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-item: center;
@@ -123,7 +123,8 @@ const EventDataItem = styled.div`
   flex: 0 0 100%;
   width: 100%;
   text-align: center;
-
+  display: flex;
+  justify-content: center;
   @media screen and (min-width: ${breakpoints.md}) {
     flex: 1 0 50%;
     text-align: left;
@@ -157,19 +158,17 @@ const DateComponent = styled.section`
 const DateHighlight = styled.span`
   color: ${theme.accent};
   font-family: "KAMIKAZE";
-  font-weight: 400;
+  font-weight: 300;
   font-size: 24px;
   line-height: 32px;
-  font-weight: 600;
   text-align: justify;
-
   @media screen and (min-width: ${breakpoints.l}) {
     font-size: 24px;
     line-height: 32px;
   }
 
   @media screen and (min-width: ${breakpoints.xl}) {
-    font-size: 24px;
+    font-size: 28px;
     line-height: 46px;
   }
 `;
@@ -189,7 +188,7 @@ const DateLocation = styled.span`
   }
 
   @media screen and (min-width: ${breakpoints.xl}) {
-    font-size: 20px;
+    font-size: 22px;
     line-height: 46px;
   }
 `;
