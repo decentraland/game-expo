@@ -159,6 +159,7 @@ const DateComponent = styled.section`
 const DateHighlight = styled.span`
   color: ${theme.accent};
   font-family: "KAMIKAZE";
+  font-weight: 400;
   font-size: 24px;
   line-height: 32px;
   font-weight: 600;

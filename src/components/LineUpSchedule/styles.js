@@ -30,6 +30,7 @@ export const StyledHeaderImg = styled.img`
 export const Title = styled.h2`
   font-size: 32px;
   font-family: "KAMIKAZE";
+  font-weight: 400;
   text-align: center;
   letter-spacing: 10px;
   color: ${theme.secondary}
@@ -80,6 +81,7 @@ export const StyledLineUpBtn = styled.button`
   cursor: pointer;
   box-sizing: border-box;
   font-family: "KAMIKAZE";
+  font-weight: 400;
   font-size: 16px;
   font-weight: 600;
   outline: none !important;

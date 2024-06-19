@@ -86,6 +86,7 @@ const MVFont = styled.span`
 
 const AboutTitle = styled.h2`
   font-family: KAMIKAZE;
+  font-weight: 400;
   text-shadow: 0px 0px 31px #393939;
   font-size: 42px;
   color: #F9F5D4;

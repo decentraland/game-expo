@@ -11,6 +11,7 @@ export const Title = styled.h2`
   font-size: 32px;
   margin-bottom: 32px;
   font-family: "KAMIKAZE";
+  font-weight: 400;
   text-align: center;
   letter-spacing: 10px;
   color: #F9F5D4;
