@@ -8,8 +8,8 @@ export const CustomImage = styled.img`
 `;
 
 export const Section = styled.section`
-    padding-top: 72px;
-    padding-bottom: 72px;
+  padding-top: 72px;
+  padding-bottom: 72px;
 `;
 
 export const Title = styled.h2`
@@ -37,8 +37,8 @@ export const MapContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 32px;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  margin-top: 64px;
+  margin-bottom: 64px;
   @media screen and (min-width: ${breakpoints.l}) {
     flex-direction: row;
   }
@@ -47,7 +47,7 @@ export const MapContainer = styled.div`
 export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 24px;
 `;
 
 export const OrangeTitle = styled.h3`
@@ -102,17 +102,54 @@ export const JumpInButton = styled.button`
   border: none;
   padding-bottom: 16px;
   width: 100%;
+  font-size: 16px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  text-transform: uppercase;
+  font-family: "Gotham";
+  font-weight: 700;
   position: relative;
   z-index: 1;
   cursor: pointer;
 `;
 
-export const BorderImage = styled.img`
-`;
+export const BorderImage = styled.img``;
 
 export const ButtonContainer = styled.div`
   position: relative;
   cursor: pointer;
+  width: 215px;
+  &:hover {
+    opacity: 0.8;
+    transition: 0.2s;
+  }
+`;
+
+export const SecondJumpInButton = styled.button`
+  clip-path: polygon(50% 0%, 100% 0, 100% 0, 83% 100%, 0 100%, 0% 60%, 0 0);
+  background-color: #c445a0;
+  padding-top: 16px;
+  border: none;
+  padding-bottom: 16px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  width: 100%;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "Gotham";
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+`;
+
+export const SecondBorderImage = styled.img``;
+
+export const SecondButtonContainer = styled.a`
+  position: relative;
+  cursor: pointer;
+  width: 400px;
+  margin: 0 auto;
   &:hover {
     opacity: 0.8;
     transition: 0.2s;

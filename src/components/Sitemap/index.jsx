@@ -16,6 +16,9 @@ import {
   BorderImage,
   CustomSvg,
   ButtonContainer,
+  SecondBorderImage,
+  SecondButtonContainer,
+  SecondJumpInButton,
 } from "./styles";
 import { Container } from "../Container";
 import { StaticImage } from "gatsby-plugin-image";
@@ -77,9 +80,7 @@ const Sitemap = () => (
             <SubText>B25 - Chibi Clash</SubText>
           </SubTextContainer>
           <ButtonContainer>
-            <JumpInButton>
-              Jump In
-            </JumpInButton>
+            <JumpInButton>Jump In</JumpInButton>
             <BorderImage
               src={buttonborder}
               alt="border"
@@ -94,17 +95,20 @@ const Sitemap = () => (
           </ButtonContainer>
         </TextContainer>
       </MapContainer>
-      <SaveTheDate
-        href="https://decentraland.org/blog/announcements/the-ultimate-guide-to-decentraland-game-expo-24"
-        target="_blank"
-      >
-        <p style={{ fontSize: "20px", textAlign: "center", width: "100%" }}>
-          READ ULTIMATE GUIDE{" "}
-          <span>
-            <Polygon src={heroPolygon} />
-          </span>
-        </p>
-      </SaveTheDate>
+      <SecondButtonContainer href="https://decentraland.org/blog/announcements/the-ultimate-guide-to-decentraland-game-expo-24" target="_blank">
+        <SecondJumpInButton>READ THE ULTIMATE GUIDE</SecondJumpInButton>
+        <SecondBorderImage
+          src={buttonborder}
+          alt="border"
+          style={{
+            position: "absolute",
+            right: "-16px",
+            width: "56px",
+            top: "50%",
+            transform: "translateY(-50%)",
+          }}
+        />
+      </SecondButtonContainer>
     </Container>
   </Section>
 );

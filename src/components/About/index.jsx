@@ -5,8 +5,12 @@ import starBust5 from "../../images/Starbust5.png";
 import starBust6 from "../../images/Starbust6.png";
 import starBust7 from "../../images/Starbust7.png";
 import aboutIcon from "../../images/about/abouticon.svg";
-import aboutBg from "../../images/about/ABOUT-BG.png"
+import about1 from "../../images/about/about1.png";
+import aboutall from "../../images/about/aboutall.png";
+import saveall from "../../images/about/saveall.png";
+import aboutBg from "../../images/about/ABOUT-BG.png";
 import { Container } from "../Container";
+import buttonborder from "../../images/buttonborder.png";
 
 const About = (props) => {
   return (
@@ -17,48 +21,54 @@ const About = (props) => {
             <AboutTitle>DECENTRALAND GAME EXPO</AboutTitle>
           </AboutHeader>
           <Aboutbody>
+            <StarBustSideIcon src={saveall} />
             <AboutBodyText>
               <AboutParagraphItem>
-                <StarBustSideIcon src={aboutIcon} width="40px" height="40px" />
-                <p>
-                Explore the future of Web3 gaming at the first-ever Decentraland Game Expo! Displayed across a colorful virtual fairground, DCLGX will present a must-see arcade of amusement showcasing some of the best games on the blockchain from leading studios and talented creators.
-                </p>
+                Explore the future of Web3 gaming at the first-ever Decentraland
+                Game Expo! Displayed across a colorful virtual fairground, DCLGX
+                will present a must-see arcade of amusement showcasing some of
+                the best games on the blockchain from leading studios and
+                talented creators.
               </AboutParagraphItem>
               <AboutParagraphItem>
-                <StarBustSideIcon src={aboutIcon} width="40px" height="40px" />
-                <p>
-                Discover 30 neon-lit attractions: 26 expo booths hosting a variety of games from strategy, RPG, adventure, puzzle, and more, as well as the top 4 DCLGX Game Jam winners—visit all 30 and collect up to 15 free Wearables & Emotes along the way! In-between gaming, join tours to explore the fairgrounds and attend to live expert talks & interviews from industry experts.
-                </p>
+                Discover 30 neon-lit attractions: 26 expo booths hosting a
+                variety of games from strategy, RPG, adventure, puzzle, and
+                more, as well as the top 4 DCLGX Game Jam winners—visit all 30
+                and collect up to 15 free Wearables & Emotes along the way!
+                In-between gaming, join tours to explore the fairgrounds and
+                attend to live expert talks & interviews from industry experts.
               </AboutParagraphItem>
               <AboutParagraphItem>
-                <StarBustSideIcon src={aboutIcon} width="40px" height="40px" />
-                <p>
-                Whether you’re a gamer, gamedev, or Web3 first-timer, DCLGX is your destination for Web3 gaming. 
-                </p>
+                Whether you’re a gamer, gamedev, or Web3 first-timer, DCLGX is
+                your destination for Web3 gaming.
               </AboutParagraphItem>
               <AboutParagraphItem>
-                <StarBustSideIcon src={aboutIcon} width="40px" height="40px" />
-                <p>
-                See you in Decentraland June 26-29!
-                </p>
-              </AboutParagraphItem>
-              <AboutParagraphItem>
-                <StarBustSideIcon src={aboutIcon} width="40px" height="40px" />
-                <p>
-                  Join us to explore art beyond the constraints of reality. See
-                  you there!
-                </p>
+                <p>See you in Decentraland June 26-29!</p>
               </AboutParagraphItem>
             </AboutBodyText>
           </Aboutbody>
-          <AboutButtonContainer
+          <ButtonContainer href="https://decentraland.beehiiv.com/subscribe?utm_source=artweek.decentraland.org&utm_medium=organic&utm_campaign=DCLAW24" target="_blank">
+            <JumpInButton>SIGN UP FOR THE DECENTRALAND NEWSLETTER</JumpInButton>
+            <BorderImage
+              src={buttonborder}
+              alt="border"
+              style={{
+                position: "absolute",
+                right: "-16px",
+                width: "68px",
+                top: "50%",
+                transform: "translateY(-50%)",
+              }}
+            />
+          </ButtonContainer>
+          {/* <AboutButtonContainer
             href="https://decentraland.beehiiv.com/subscribe?utm_source=artweek.decentraland.org&utm_medium=organic&utm_campaign=DCLAW24"
             target="_blank"
           >
             <AboutButtonLink>
               Sign up for the Decentraland Newsletter
             </AboutButtonLink>
-          </AboutButtonContainer>
+          </AboutButtonContainer> */}
         </StyledAbout>
       </Container>
     </Section>
@@ -89,7 +99,7 @@ const AboutTitle = styled.h2`
   font-weight: 400;
   text-shadow: 0px 0px 31px #393939;
   font-size: 42px;
-  color: #F9F5D4;
+  color: #f9f5d4;
   text-align: center;
 `;
 
@@ -98,7 +108,6 @@ const Section = styled.section`
   background-image: url(${aboutBg});
   background-repeat: no-repeat;
   background-size: cover;
-
 `;
 
 const StyledAbout = styled.div`
@@ -124,6 +133,8 @@ const SideIcon = styled.img`
 
 const Aboutbody = styled.section`
   display: flex;
+  gap: 16px;
+  margin-bottom: 48px;
 `;
 
 const StarBustSideIcon = styled.img`
@@ -143,7 +154,7 @@ const AboutBodyText = styled.div`
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    max-width: 850px;
+    max-width: 468px;
   }
 `;
 
@@ -286,6 +297,36 @@ const ButtonDecorator = styled.img`
     height: 52px;
     top: 0;
     right: -5px;
+  }
+`;
+
+const JumpInButton = styled.button`
+  clip-path: polygon(50% 0%, 100% 0, 100% 0, 83% 100%, 0 100%, 0% 60%, 0 0);
+  background-color: #c445a0;
+  padding-top: 20px;
+  border: none;
+  padding-bottom: 20px;
+  width: 100%;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: "Gotham";
+  font-weight: 700;
+  z-index: 1;
+  cursor: pointer;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+`;
+
+const BorderImage = styled.img``;
+
+const ButtonContainer = styled.a`
+  position: relative;
+  margin-top: 32px;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+    transition: 0.2s;
   }
 `;
 
