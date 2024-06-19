@@ -7,6 +7,8 @@
     "gatsby"
   ],
   "scripts": {
+    "prebuild": "node scripts/prebuild.js",
+    "postbuild": "node scripts/postbuild.js",
     "develop": "gatsby develop --https",
     "start": "gatsby develop --https",
     "build": "gatsby build",
