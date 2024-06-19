@@ -29,7 +29,7 @@ const seo = {
   title: "Decentraland Game Expo",
   description:
     "From 26-29 March 2024, Decentraland Art Week will spotlight the infinite potential of art and creativity in new realities.",
-  image: "https://events-assets-099ac00.decentraland.org/poster/c08e664f65e0cdf1.jpg",
+  image: "https://events-assets-099ac00.decentraland.org/poster/c08e664f6668b3c0.png",
 };
 
 const meta = {
