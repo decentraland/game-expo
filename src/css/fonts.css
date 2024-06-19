@@ -1,0 +1,39 @@
+
+/* NEW FONTS */
+@font-face {
+  font-family: 'SFUI';
+  src: url(../fonts/SFUIText-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'SFUI';
+  src: url(../fonts/SFUIText-Bold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'KAMIKAZE';
+  src: url(../fonts/Kamikaze.ttf);
+  font-weight: 400;
+}
+
+
+@font-face {
+  font-family: 'GOTHAM';
+  src: url(../fonts/GothamBook.ttf);
+  font-weight: 400;
+}
+
+
+@font-face {
+  font-family: 'GOTHAM';
+  src: url(../fonts/GothamBold.otf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'GOTHAM';
+  src: url(../fonts/GothamBlack.otf);
+  font-weight: 900;
+}
