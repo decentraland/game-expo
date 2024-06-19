@@ -16,10 +16,10 @@ const About = (props) => {
   return (
     <Section id="about">
       <Container>
+        <AboutHeader>
+          <AboutTitle>DECENTRALAND GAME EXPO</AboutTitle>
+        </AboutHeader>
         <StyledAbout>
-          <AboutHeader>
-            <AboutTitle>DECENTRALAND GAME EXPO</AboutTitle>
-          </AboutHeader>
           <Aboutbody>
             <StarBustSideIcon src={saveall} />
             <AboutBodyText>
@@ -48,7 +48,7 @@ const About = (props) => {
             </AboutBodyText>
           </Aboutbody>
           <ButtonContainer
-            href="https://decentraland.beehiiv.com/subscribe?utm_source=artweek.decentraland.org&utm_medium=organic&utm_campaign=DCLAW24"
+            href="https://decentraland.beehiiv.com/subscribe?utm_source=decentraland.org/gameexpo&utm_medium=organic&utm_campaign=DCLGX"
             target="_blank"
           >
             <JumpInButton>SIGN UP FOR THE DECENTRALAND NEWSLETTER</JumpInButton>
@@ -101,7 +101,7 @@ const AboutTitle = styled.h2`
   font-family: KAMIKAZE;
   font-weight: 400;
   text-shadow: 0px 0px 31px #393939;
-  font-size: 42px;
+  font-size: 64px;
   color: #f9f5d4;
   text-align: center;
 `;
@@ -111,18 +111,21 @@ const Section = styled.section`
   background-image: url(${aboutBg});
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 24px;
+  @media screen and (min-width: 769px) {
+    padding-bottom: 100px;
+  }
 `;
 
 const StyledAbout = styled.div`
   margin: auto;
-  padding: 72px 0;
 `;
 
 const AboutHeader = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 56px;
+  padding: 72px 0;
 `;
 
 const SideIcon = styled.img`

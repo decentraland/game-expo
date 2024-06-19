@@ -82,7 +82,7 @@ const LineUpSchedule = (props) => {
           )}
         </StyledLineUpBody>
         <ButtonContainer
-          href="https://decentraland.org/blog/announcements/the-ultimate-guide-to-decentraland-game-expo-24"
+          href="https://decentraland.org/blog/announcements/the-ultimate-guide-to-decentraland-game-expo-24?utm_org=dcl&utm_source=landing&utm_campaign=dclgx"
           target="_blank"
         >
           <JumpInButton>Read the Ultimate Guide</JumpInButton>

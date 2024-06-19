@@ -79,7 +79,7 @@ const Sitemap = () => (
             <SubText>B24 - Planet Mojo</SubText>
             <SubText>B25 - Chibi Clash</SubText>
           </SubTextContainer>
-          <ButtonContainer>
+          <ButtonContainer href="https://decentraland.org/events/event/?id=e5fcbaa3-8a51-4fbb-8ecb-89622d9e7eab&utm_source=landing&utm_medium=organic&utm_campaign=dclgx" target="_blank">
             <JumpInButton>Jump In</JumpInButton>
             <BorderImage
               src={buttonborder}
@@ -95,7 +95,7 @@ const Sitemap = () => (
           </ButtonContainer>
         </TextContainer>
       </MapContainer>
-      <SecondButtonContainer href="https://decentraland.org/blog/announcements/the-ultimate-guide-to-decentraland-game-expo-24" target="_blank">
+      <SecondButtonContainer href="https://decentraland.org/blog/announcements/the-ultimate-guide-to-decentraland-game-expo-24?utm_org=dcl&utm_source=landing&utm_campaign=dclgx" target="_blank">
         <SecondJumpInButton>READ THE ULTIMATE GUIDE</SecondJumpInButton>
         <SecondBorderImage
           src={buttonborder}
