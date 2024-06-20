@@ -76,7 +76,7 @@ export const questions = [
     question: "How do I keep up to date with Game Expo News?",
     answer: () => (
       <p>
-        Follow <a href="https://x.com/decentraland" target="_blank">@Decentraland</a> on Twitter and the <a href="https://x.com/search?q=%23dclgx&src=typed_query" target="_blank">#DCLGX24</a> hashtag for live
+        Follow <a href="https://x.com/decentraland" target="_blank">@Decentraland</a> on Twitter and the <a href="https://x.com/search?q=%23dclgx&src=typed_query" target="_blank">#DCLGX</a> hashtag for live
         updates and <a href="https://decentraland.beehiiv.com/subscribe?utm_source=decentraland.org/gameexpo&utm_medium=organic&utm_campaign=DCLGX" target="_blank">subscribe</a> to Decentraland’s weekly newsletter.
       </p>
     ),
