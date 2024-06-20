@@ -73,6 +73,8 @@ export const Answer = styled.p`
 
   a {
     color: ${theme.accent};
+    display: inline-block;
+    height: auto;
     font-family: "Gotham", sans-serif;
     text-decoration: underline;
     cursor: pointer;
